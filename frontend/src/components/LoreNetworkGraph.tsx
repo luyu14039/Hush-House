@@ -3,7 +3,7 @@ import ForceGraph2D from 'react-force-graph-2d';
 import graphData from '../data/lore_graph.json';
 
 // Define types for our graph data
-interface Node {
+interface GraphNode {
   id: string;
   label: string;
   type: string;
@@ -20,9 +20,9 @@ interface Node {
   y?: number;
 }
 
-interface Link {
-  source: string | Node;
-  target: string | Node;
+interface GraphLink {
+  source: string | GraphNode;
+  target: string | GraphNode;
   label: string;
   weight: number;
   confidence: number;
@@ -89,7 +89,7 @@ const translateLabel = (label: string) => {
 };
 
 // Helper to get color
-const getNodeColor = (node: Node) => {
+const getNodeColor = (node: GraphNode) => {
     if (node.type === 'hour' && node.color && node.color !== '#999') return node.color;
     // Map types to theme
     switch (node.type) {
@@ -107,12 +107,12 @@ const LoreNetworkGraph: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 100, height: 100 });
   const [highlightNodes, setHighlightNodes] = useState(new Set<string>());
-  const [highlightLinks, setHighlightLinks] = useState(new Set<Link>());
-  const [hoverNode, setHoverNode] = useState<Node | null>(null);
-  const [selectedNode, setSelectedNode] = useState<Node | null>(null);
-  const [selectedLink, setSelectedLink] = useState<Link | null>(null);
+  const [highlightLinks, setHighlightLinks] = useState(new Set<GraphLink>());
+  const [hoverNode, setHoverNode] = useState<GraphNode | null>(null);
+  const [selectedNode, setSelectedNode] = useState<GraphNode | null>(null);
+  const [selectedLink, setSelectedLink] = useState<GraphLink | null>(null);
   const [relatedNodes, setRelatedNodes] = useState(new Set<string>());
-  const [relatedLinks, setRelatedLinks] = useState(new Set<Link>());
+  const [relatedLinks, setRelatedLinks] = useState(new Set<GraphLink>());
   const [searchTerm, setSearchTerm] = useState('');
   const [isAmbientMotion, setIsAmbientMotion] = useState(true); // Default On for Galaxy
   const [isResearchMode, setIsResearchMode] = useState(false); // Default Off (Galaxy Mode)
@@ -279,25 +279,25 @@ const LoreNetworkGraph: React.FC = () => {
   // Update related nodes when selection changes
   useEffect(() => {
     if (selectedLink) {
-        const sourceId = typeof selectedLink.source === 'object' ? (selectedLink.source as Node).id : selectedLink.source;
-        const targetId = typeof selectedLink.target === 'object' ? (selectedLink.target as Node).id : selectedLink.target;
+        const sourceId = typeof selectedLink.source === 'object' ? (selectedLink.source as GraphNode).id : selectedLink.source;
+        const targetId = typeof selectedLink.target === 'object' ? (selectedLink.target as GraphNode).id : selectedLink.target;
         
         const newRelatedNodes = new Set<string>();
         newRelatedNodes.add(sourceId);
         newRelatedNodes.add(targetId);
         setRelatedNodes(newRelatedNodes);
 
-        const newRelatedLinks = new Set<Link>();
+        const newRelatedLinks = new Set<GraphLink>();
         newRelatedLinks.add(selectedLink);
         setRelatedLinks(newRelatedLinks);
     } else if (selectedNode) {
       const newRelatedNodes = new Set<string>();
-      const newRelatedLinks = new Set<Link>();
+      const newRelatedLinks = new Set<GraphLink>();
       newRelatedNodes.add(selectedNode.id);
       
-      data.links.forEach((link: Link) => {
-        const sourceId = typeof link.source === 'object' ? (link.source as Node).id : link.source;
-        const targetId = typeof link.target === 'object' ? (link.target as Node).id : link.target;
+      data.links.forEach((link: GraphLink) => {
+        const sourceId = typeof link.source === 'object' ? (link.source as GraphNode).id : link.source;
+        const targetId = typeof link.target === 'object' ? (link.target as GraphNode).id : link.target;
 
         if (sourceId === selectedNode.id || targetId === selectedNode.id) {
           newRelatedLinks.add(link);
@@ -313,16 +313,16 @@ const LoreNetworkGraph: React.FC = () => {
     }
   }, [selectedNode, selectedLink, data]);
 
-  const handleNodeHover = (node: Node | null) => {
+  const handleNodeHover = (node: GraphNode | null) => {
     setHoverNode(node);
     const newHighlightNodes = new Set<string>();
-    const newHighlightLinks = new Set<Link>();
+    const newHighlightLinks = new Set<GraphLink>();
 
     if (node) {
       newHighlightNodes.add(node.id);
-      data.links.forEach((link: Link) => {
-        const sourceId = typeof link.source === 'object' ? (link.source as Node).id : link.source;
-        const targetId = typeof link.target === 'object' ? (link.target as Node).id : link.target;
+      data.links.forEach((link: GraphLink) => {
+        const sourceId = typeof link.source === 'object' ? (link.source as GraphNode).id : link.source;
+        const targetId = typeof link.target === 'object' ? (link.target as GraphNode).id : link.target;
 
         if (sourceId === node.id || targetId === node.id) {
           newHighlightLinks.add(link);
@@ -336,9 +336,9 @@ const LoreNetworkGraph: React.FC = () => {
     setHighlightLinks(newHighlightLinks);
   };
 
-  const handleNodeClick = useCallback((node: Node) => {
+  const handleNodeClick = useCallback((node: GraphNode) => {
     // Helper to zoom to a node
-    const zoomToNode = (n: Node) => {
+    const zoomToNode = (n: GraphNode) => {
         if (graphRef.current) {
             graphRef.current.centerAt(n.x, n.y, 1000);
             graphRef.current.zoom(4, 2000);
@@ -346,14 +346,14 @@ const LoreNetworkGraph: React.FC = () => {
     };
 
     // Helper to zoom to a link
-    const zoomToLink = (link: Link) => {
-        const getNode = (item: string | Node) => {
+    const zoomToLink = (link: GraphLink) => {
+        const getNode = (item: string | GraphNode) => {
             if (typeof item === 'object') {
-                const n = item as Node;
+                const n = item as GraphNode;
                 if (typeof n.x === 'number') return n;
-                return data.nodes.find((gn: Node) => gn.id === n.id) || n;
+                return data.nodes.find((gn: GraphNode) => gn.id === n.id) || n;
             }
-            return data.nodes.find((gn: Node) => gn.id === item);
+            return data.nodes.find((gn: GraphNode) => gn.id === item);
         };
 
         const source = getNode(link.source);
@@ -394,9 +394,9 @@ const LoreNetworkGraph: React.FC = () => {
         }
 
         // Check if connected
-        const link = data.links.find((l: Link) => {
-            const s = typeof l.source === 'object' ? (l.source as Node).id : l.source;
-            const t = typeof l.target === 'object' ? (l.target as Node).id : l.target;
+        const link = data.links.find((l: GraphLink) => {
+            const s = typeof l.source === 'object' ? (l.source as GraphNode).id : l.source;
+            const t = typeof l.target === 'object' ? (l.target as GraphNode).id : l.target;
             return (s === selectedNode.id && t === node.id) || (s === node.id && t === selectedNode.id);
         });
 
@@ -422,7 +422,7 @@ const LoreNetworkGraph: React.FC = () => {
     setSearchTerm(term);
     
     if (term && graphRef.current) {
-      const foundNode = data.nodes.find((n: Node) => 
+      const foundNode = data.nodes.find((n: GraphNode) => 
         n.label.toLowerCase().includes(term.toLowerCase()) || 
         n.id.toLowerCase().includes(term.toLowerCase())
       );
@@ -437,7 +437,7 @@ const LoreNetworkGraph: React.FC = () => {
   };
 
   // Helper to format labels (remove person. prefix, capitalize, etc.)
-  const formatLabel = (node: Node) => {
+  const formatLabel = (node: GraphNode) => {
     // If label is already good (Chinese or normal text), use it
     // Simple check: if it has no dots and no underscores, it's probably fine
     // Or if it contains Chinese characters
@@ -453,15 +453,15 @@ const LoreNetworkGraph: React.FC = () => {
       .join(' ') || text;
   };
 
-  const paintNode = useCallback((node: Node, ctx: CanvasRenderingContext2D, globalScale: number) => {
+  const paintNode = useCallback((node: GraphNode, ctx: CanvasRenderingContext2D, globalScale: number) => {
     const label = formatLabel(node);
     const isSelected = node === selectedNode;
     
     // Check if related via set OR directly via selectedLink (fallback)
     const isRelated = relatedNodes.has(node.id) || 
         (!!selectedLink && (
-            (typeof selectedLink.source === 'object' ? (selectedLink.source as Node).id : selectedLink.source) === node.id ||
-            (typeof selectedLink.target === 'object' ? (selectedLink.target as Node).id : selectedLink.target) === node.id
+            (typeof selectedLink.source === 'object' ? (selectedLink.source as GraphNode).id : selectedLink.source) === node.id ||
+            (typeof selectedLink.target === 'object' ? (selectedLink.target as GraphNode).id : selectedLink.target) === node.id
         ));
 
     const isHovered = node === hoverNode;
@@ -570,9 +570,9 @@ const LoreNetworkGraph: React.FC = () => {
     ctx.globalAlpha = 1;
   }, [selectedNode, selectedLink, hoverNode, highlightNodes, relatedNodes]);
 
-  const paintLink = useCallback((link: Link, ctx: CanvasRenderingContext2D, globalScale: number) => {
-    const source = link.source as Node;
-    const target = link.target as Node;
+  const paintLink = useCallback((link: GraphLink, ctx: CanvasRenderingContext2D, globalScale: number) => {
+    const source = link.source as GraphNode;
+    const target = link.target as GraphNode;
 
     // Safety check
     if (typeof source !== 'object' || typeof target !== 'object' || !source.x || !source.y || !target.x || !target.y) return;
@@ -838,25 +838,25 @@ const LoreNetworkGraph: React.FC = () => {
         height={dimensions.height}
         graphData={data}
         nodeLabel={(node: any) => formatLabel(node)}
-        nodeColor={node => (node as Node).color}
+        nodeColor={node => (node as GraphNode).color}
         nodeRelSize={6}
         linkColor={link => {
             if (selectedNode || selectedLink) {
-                return relatedLinks.has(link as Link) ? 'rgba(200, 230, 255, 0.2)' : 'rgba(200, 230, 255, 0.02)';
+                return relatedLinks.has(link as GraphLink) ? 'rgba(200, 230, 255, 0.2)' : 'rgba(200, 230, 255, 0.02)';
             }
             return 'rgba(200, 230, 255, 0.1)';
         }}
         linkWidth={link => {
             if (selectedNode || selectedLink) {
-                return relatedLinks.has(link as Link) ? 2 : 0.5;
+                return relatedLinks.has(link as GraphLink) ? 2 : 0.5;
             }
-            return highlightLinks.has(link as Link) ? 2 : 0.5;
+            return highlightLinks.has(link as GraphLink) ? 2 : 0.5;
         }}
         linkDirectionalParticles={link => {
             if (selectedNode || selectedLink) {
-                return relatedLinks.has(link as Link) ? 4 : 0;
+                return relatedLinks.has(link as GraphLink) ? 4 : 0;
             }
-            return highlightLinks.has(link as Link) ? 4 : 0;
+            return highlightLinks.has(link as GraphLink) ? 4 : 0;
         }}
         linkDirectionalParticleWidth={2}
         onNodeHover={handleNodeHover}

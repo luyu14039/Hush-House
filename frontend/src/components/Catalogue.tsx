@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import type { Item } from '../types';
-import { MagnifyingGlassIcon, FunnelIcon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 interface CatalogueProps {
   items: Item[];

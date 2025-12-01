@@ -5,6 +5,21 @@ import { getAspectInfo } from '../utils/aspects';
 import { getEntityDef } from '../utils/textAnalysis';
 import { HOUR_PRINCIPLES, ENTITY_CONNECTIONS } from '../utils/lore';
 
+interface GraphNode extends d3.SimulationNodeDatum {
+  id: string;
+  group: 'book' | 'principle' | 'entity';
+  name: string;
+  color?: string;
+  item?: Item;
+  entityType?: string;
+}
+
+interface GraphLink extends d3.SimulationLinkDatum<GraphNode> {
+  source: string | GraphNode;
+  target: string | GraphNode;
+  value: number;
+}
+
 interface LoomProps {
   items: Item[];
   onSelect?: (item: Item) => void;
@@ -23,8 +38,8 @@ export const Loom: React.FC<LoomProps> = ({ items, onSelect }) => {
 
   // Prepare Graph Data
   const data = useMemo(() => {
-    const nodes: Node[] = [];
-    const links: Link[] = [];
+    const nodes: GraphNode[] = [];
+    const links: GraphLink[] = [];
     const principleSet = new Set<string>();
     const entitySet = new Set<string>();
 
@@ -33,7 +48,7 @@ export const Loom: React.FC<LoomProps> = ({ items, onSelect }) => {
       // We always create book nodes, but we might filter them out later if we want strict filtering
       // For now, let's keep books always, but only link them if the target exists
       
-      const bookNode: Node = {
+      const bookNode: GraphNode = {
         id: item.id,
         group: 'book',
         name: item.name,
@@ -46,7 +61,7 @@ export const Loom: React.FC<LoomProps> = ({ items, onSelect }) => {
       if (showPrinciples) {
         // 1. From direct aspects (BoH style)
         Object.entries(item.aspects).forEach(([key, val]) => {
-          const info = getAspectInfo(key);
+          // const info = getAspectInfo(key); // Unused
           const isPrinciple = [
             'lantern', 'forge', 'edge', 'winter', 'heart', 'grail', 'moth', 'knock', 'secret_histories',
             'sky', 'moon', 'nectar', 'scale', 'rose'
@@ -260,7 +275,7 @@ export const Loom: React.FC<LoomProps> = ({ items, onSelect }) => {
       .selectAll("g")
       .data(data.nodes)
       .join("g")
-      .call(d3.drag<SVGGElement, Node>()
+      .call(d3.drag<SVGGElement, GraphNode>()
         .on("start", dragstarted)
         .on("drag", dragged)
         .on("end", dragended) as any);
