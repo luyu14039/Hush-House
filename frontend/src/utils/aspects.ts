@@ -187,7 +187,6 @@ export const ASPECT_INFO: Record<string, { name: string; color: string; icon?: s
 
   // BoH Wisdoms & Lessons (Specific)
   'w.cracktrack': { name: '智慧：裂纹', color: 'text-purple-300 border-purple-300/30 bg-purple-300/10', icon: 'AcademicCapIcon' },
-  'r.watchmansparadoxes': { name: '教诲：守夜人的悖论', color: 'text-amber-300 border-amber-300/30 bg-amber-300/10', icon: 'SparklesIcon' },
   
   // Skills (s.* or direct)
   'edictsinviolable': { name: '技能：不可侵犯之敕令', color: 'text-stone-400 border-stone-400/30 bg-stone-400/10', icon: 'AcademicCapIcon' },

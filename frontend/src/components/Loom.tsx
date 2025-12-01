@@ -296,11 +296,11 @@ export const Loom: React.FC<LoomProps> = ({ items, onSelect }) => {
       .attr("stroke-width", (d) => (d.group === 'principle' || d.group === 'entity') ? 2 : 1)
       .style("cursor", "pointer")
       .style("transition", "all 0.3s ease")
-      .on("mouseover", function(event, d) {
+      .on("mouseover", function(_event, _d) {
         d3.select(this).attr("stroke", "#fbbf24").attr("stroke-width", 3).attr("fill", "#fbbf24");
         d3.select(this.parentNode as Element).select("text").style("opacity", 1);
       })
-      .on("mouseout", function(event, d) {
+      .on("mouseout", function(_event, d) {
         const isHub = d.group === 'principle' || d.group === 'entity';
         d3.select(this)
             .attr("stroke", isHub ? '#fff' : (d.color || '#94a3b8'))

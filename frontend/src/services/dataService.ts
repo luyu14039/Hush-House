@@ -3,8 +3,8 @@ import bohDataRaw from '../data/boh_data.json';
 import { extractEntities } from '../utils/textAnalysis';
 import type { GameData, Item } from '../types';
 
-const csData = csDataRaw as GameData;
-const bohData = bohDataRaw as GameData;
+const csData = csDataRaw as unknown as GameData;
+const bohData = bohDataRaw as unknown as GameData;
 
 // Helper to extract mentions from an item
 const analyzeItem = (item: any): string[] => {
