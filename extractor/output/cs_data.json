@@ -1,0 +1,3351 @@
+{
+  "game": "Cultist Simulator",
+  "items": [
+    {
+      "id": "dehoris1",
+      "name": "《司辰志·卷一》",
+      "description": "一套隐秘诸神的名册，内容半通不通。这本是其中一卷的英译本，记述了林地诸神灵。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "dehoris1",
+      "reading": {
+        "intro": "本卷主要讲述了林地司辰中飞蛾、漆黑亚麻和环杉的故事。",
+        "content": "“辉光是一个疑问，飞蛾总以肯定作答。漆黑亚麻以否定作答，从来如此。”",
+        "effects": {
+          "dehoris1": -1,
+          "fragmentmoth": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "dehoris2",
+      "name": "《司辰志·卷二》",
+      "description": "一套隐秘诸神的名册，内容半通不通。这本是其中一卷的英译本，记述了“狮子匠”和“伤疤护民官”之间的敌对关系。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "dehoris2",
+      "reading": {
+        "intro": "本卷主要讲述了狮子匠，伤疤护民官及两者敌对的故事。",
+        "content": "“狮子匠造出怪物意图击败伤疤护民官，然而护民官身上的每一道伤疤都是武器。”",
+        "effects": {
+          "dehoris2": -1,
+          "fragmentedge": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "travellingatnight1",
+      "name": "《夜游漫记·卷一》",
+      "description": "一套带注解的克里斯托弗·伊利奥波里的梦境手记，有时也被称为“唯一能读懂的密教典籍”：文笔精妙，富有趣味，扑朔迷离。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "travellingatnight1",
+      "reading": {
+        "intro": "“林地生长于漫宿墙外。每一个研习诸史的人都知道，漫宿无墙。”",
+        "content": "伊利奥波里在书中描述了他如何通过他口中的银色梦境反复造访梦中的林地。“通过遐想到达林地，”他解释道，“如同遐想坠入爱河一般。不过我的确找到了有所裨助的<b>秘密</b>。”",
+        "effects": {
+          "travellingatnight1": -1,
+          "fragmentmoth": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "travellingatnight2",
+      "name": "《夜游漫记·卷二》",
+      "description": "一套带注解的克里斯托弗·伊利奥波里的梦境手记，有时也被称为“唯一能读懂的密教典籍”：文笔精妙，富有趣味，扑朔迷离。本书为第二卷。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "travellingatnight2",
+      "reading": {
+        "intro": "书中对伊利奥波里自身的梦境与皇帝埃拉伽巴路斯的梦境，两者间的相似处进行了大篇幅的讨论。伊利奥波里认为埃拉伽巴路斯是残阳的傀儡或化身。“<b>纯白</b>在世界以西，”伊利奥波里评论道，“且<b>冬</b>不永待。”",
+        "content": "“谢天谢地，埃拉伽巴路斯最终寻见了纯白之门。话语无法穿过纯白之门，而且说实话，埃拉伽巴路斯讲不出什么有趣的话。我曾经尝试追随他的脚步，但终究对“纯白”领会不足。大概我也幸而如此吧。但我确实知道……”",
+        "effects": {
+          "travellingatnight2": -1,
+          "fragmentwinter": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "travellingatnight3",
+      "name": "《夜游漫记·卷三》",
+      "description": "一套带注解的克里斯托弗·伊利奥波里的梦境手记，有时也被称为“唯一能读懂的密教典籍”：文笔精妙，富有趣味，扑朔迷离。本书为第三卷。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "travellingatnight3",
+      "reading": {
+        "intro": "伊利奥波里在讨论火焰和不焚之神的论文中插入了数段致“巴尔多梅姬”的香艳诗文。",
+        "content": "“要去至牡鹿之门，我认为人需要的只是足够强烈想要某物的念头。可是我从来没有那样想要过什么，当然，除了对巴尔多梅姬，且这恐怕是此事的死结所在：巴尔多梅姬想要的是牡鹿之门。不过，下文是我在波斯学到的一些东西。或许能教会你<i>你</i>想要何物。”",
+        "effects": {
+          "travellingatnight3": -1,
+          "fragmentforge": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "sixlettersonnecessity",
+      "name": "《须知六函》",
+      "description": "本书记载了对修习无形之术所付出代价的警告和忏悔，乃十七世纪的术士（据传亦是永生不死者）朱利安·科赛利馈赠学生之物。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "sixlettersonnecessity",
+      "reading": {
+        "intro": "科赛利语气急迫——仿佛自疑时日无多。",
+        "content": "“即便是冭阳也能被分裂，尽管它要求由㿟日铸炉动手。”",
+        "effects": {
+          "sixlettersonnecessity": -1,
+          "fragmentforge": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "locksmithsdream1",
+      "name": "《锁匠的梦境：穿过锁孔之光》",
+      "description": "特蕾莎·加尔米耶在书中考察了匠人们所经历的神秘梦境中的相似之处。丛书第一卷。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "locksmithsdream1",
+      "reading": {
+        "intro": "木匠、泥瓦匠和其他工匠所经历的神秘梦境互有相似之处，他们自以为揭露出的世界之建构亦然。本书时而辛辣，时而逗趣。没人解释得清加尔米耶为何热衷于对工匠的梦展开这种异想天开的探索。",
+        "content": "“我们一次次听说‘林地’，从世界的基盘升起的地方。一切树木都向光生长。而‘林地’之树向何生长？此光和彼‘光’有何区别？我认为通往林地梦境的钥匙或在答案当中——在不完全真实的那个答案中。”",
+        "effects": {
+          "locksmithsdream1": -1,
+          "fragmentlantern": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "locksmithsdream2",
+      "name": "《锁匠的梦境：构成和大小》",
+      "description": "特蕾莎·加尔米耶在书中考察了匠人们所经历的神秘梦境中的相似之处。丛书第二卷。扉页已被人拿剃刀划烂。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "locksmithsdream2",
+      "reading": {
+        "intro": "加尔米耶在本卷中记录了几个梦境，进一步阐释了自己周详的理论。“我们反复看到这样一句话：下部无法脱离上部。”",
+        "content": "“最杰出的工匠最后都梦到了纯白之门。我只是一名学者，而非工匠。我觉得一定存在一个所有这些工匠都知晓的秘密，不过我也觉得这个秘密只是其中的一半。”",
+        "effects": {
+          "locksmithsdream2": -1,
+          "fragmentknock": 1,
+          "erudition": 1
+        }
+      }
+    },
+    {
+      "id": "locksmithsdream3",
+      "name": "《锁匠的梦境：罪行》",
+      "description": "特蕾莎·加尔米耶在书中考察了匠人们所经历的神秘梦境中的相似之处。丛书第三卷。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "locksmithsdream3",
+      "reading": {
+        "intro": "众所周知，加尔米耶的文字从此卷开始语不成章，让人弄不清哪些梦境其实是她本人的。",
+        "content": "“身着沙色长袍的女人告诉我：漫宿的阶梯一直朝上延伸。死亡则朝下。蚁母用她的两个头颅分别卫戍上下两方，若要通行，必须通过创口。我觉得纯白之门或许就是创口。这即是亡者有时从此门通过的一个原因。我觉得我找到另一半秘密了，我希望本书的读者能够将两半秘密拼合完整。”",
+        "effects": {
+          "locksmithsdream3": -1,
+          "fragmentmothb": 1,
+          "glimmering": 1
+        }
+      }
+    },
+    {
+      "id": "locksmithsdream4",
+      "name": "《锁匠的梦境：被盗的倒影》",
+      "description": "特蕾莎·加尔米耶所著的卷帙浩繁之作的第四卷——不再是关于匠人梦境的探讨，而是贵重的对其他职业的调查。笔锋相较《罪行》平静了许多，却时而透出惧意，甚至偏执。本卷于1926年出版，却几乎立刻就被出版社召回销毁——依作者或是政府的要求，随你相信哪种说法。只有数本得以保全。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "locksmithsdream4",
+      "reading": {
+        "intro": "“雅努斯是守门者、双面之神、制造伤口之神、昭示改变之神，是太阳，是月亮。所以我们视他作守夜人、孪生子、蚁母、铸炉、弧月和昕旦。他不可能兼为上述诸神吧？这可能吗？<i>古罗马祭司们</i>了解教堂，了解干涸之地，了解埃拉伽巴路斯。所以他是杂糅而成的吗？亦或他是其他存在？在加拉埃西亚，人们称他为亚努斯·拉弥俄斯，不过忘却会是人尽皆知地爱好诽谤，此名不可全信。”",
+        "content": "“那些人说，雅努斯不只有一张，而是有两张脸孔。对此我要回问：为何只有一张脸？为何只有两张脸？海索与科赛利——据托马斯·洛夫·登曼称——曾经认同‘此诸神兼是亦兼非’雅努斯。但在之后，海索坚称‘兼是’他，科赛利则偏爱单纯的‘兼非’。登曼是个不怀好意的半吊子，但这两种说法听起来各具其实。”",
+        "effects": {
+          "locksmithsdream4": -1,
+          "fragmentmothc": 1,
+          "fragmentlanternc": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "locksmithsdream5",
+      "name": "《锁匠的梦境：神侵》",
+      "description": "特蕾莎·加尔米耶所著的臭名昭著之作的第五卷（最后一卷?），始于作者对匠人们神秘梦境中的相似之处的考察，后来变成她自己的探索密教之旅笔记。这一卷从未出版过，而且看样子，还未写出来。",
+      "aspects": {
+        "text": 1,
+        "lantern": 1
+      },
+      "type": "book",
+      "icon": "locksmithsdream5"
+    },
+    {
+      "id": "humoursofagentleman",
+      "name": "《绅士笑话集》",
+      "description": "萨缪尔·萨维奇所著的讽刺喜剧，主要角色包括身体抱恙然却狡诈多端的约翰·泰扬，他的情妇琅优，琅优的情人施梓，还有暴发户乌亚。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "humoursofagentleman",
+      "reading": {
+        "intro": "在第一幕结尾，琅优向施梓透露居屋的墙上有秘门，而乌亚则开始惯于进食蠕虫。",
+        "content": "这部戏剧即粗俗间或又令人捧腹。戏中角色相互对立而又反复无常。其中多句更加意有所指的台词或可用于施展强力的法术，尽管它们藏于平平无奇的场景之中。",
+        "effects": {
+          "humoursofagentleman": -1,
+          "fragmentlantern": 1
+        }
+      }
+    },
+    {
+      "id": "victoryofcrowns",
+      "name": "《王冠的胜利》",
+      "description": "一本怪书，作者署名“阿伦”。记载了某些不为人知的教团派出暗杀者，追猎和进食据称永生不死的人们的经过。出版于十九世纪后期。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "victoryofcrowns",
+      "reading": {
+        "intro": "据“阿伦”称，这些暗杀者是一位名为“尚校”的神灵的使者，是“隶属于诸位秘密大师的士兵”。此类说法一直可上溯至罗马时代。",
+        "content": "阿伦的学识令人存疑，但是他（她？）的文笔简洁有力，在记述突发且暴力的死亡事件时穿插着警句：“司辰无梦，长生者力图无梦。”",
+        "effects": {
+          "victoryofcrowns": -1,
+          "fragmentedge": 1
+        }
+      }
+    },
+    {
+      "id": "introductiontohistories",
+      "name": "《诸史导论》",
+      "description": "由十七世纪的神秘主义者兼古董商人克劳德·海索所著，描述了五大历史中的分歧事件。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "introductiontohistories",
+      "reading": {
+        "intro": "书的序言用长篇笔墨警告人们一个名为朱利安·科赛利的人的罪恶行径，海索将这位前同僚尖刻地描述成“蠕虫中的蠕虫”。海索貌似在本书创作早期得到过科赛利的建议，后又对其起疑。",
+        "content": "海索认定各历史的中轴分别为<b>血</b>、<b>银</b>、<b>设计</b>和<b>蠕虫</b>，并称所谓的第二史才是真正的历史。",
+        "effects": {
+          "introductiontohistories": -1,
+          "fragmentsecrethistories": 1
+        }
+      }
+    },
+    {
+      "id": "treatiseonunderplaces",
+      "name": "《下层论》",
+      "description": "由十七世纪的神秘主义者兼古董商人克劳德·海索所著，本书描述了梦境界域上的“边境”或称“下层”概念。此人也警告说，这些概念随时间变化。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "treatiseonunderplaces",
+      "reading": {
+        "intro": "“漫宿之墙浩如星光”，海索如是开篇。他的许多指点都无用得如出一辙，不过也确能体现出某些共通的关系。",
+        "content": "本书以浪荡汉冒险小说的文风记录了一场穿越梦魇的旅途，夹杂着或为对仪式片段的描述。“第十八次上升为结苞。第三十六次为绽蕊。”",
+        "effects": {
+          "treatiseonunderplaces": -1,
+          "fragmentknockb": 1
+        }
+      }
+    },
+    {
+      "id": "onthewhite",
+      "name": "《论纯白》",
+      "description": "所罗门·赫舍著，书的内容也许能解读为关于<b>冬</b>季的寓言，以及它与太阳漫长的，缓缓迎来毁灭的罗曼史。本书的引言是“午时日落”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "onthewhite",
+      "reading": {
+        "intro": "若仔细研究本书，可以发现其内容似乎是一种美学理论，又或者是对绘画之危险的一系列警告。",
+        "content": "赫舍在书中心烦意乱地写下他对颜色的愤恨和对死亡的渴求。他还略微提及他正在构思，或已开始实践的那件大作——“淡白至极的绘画”将令世界为之着迷。他一遍遍重复着某几句引人注目的话，他称之为“<b>冬</b>之密文”。",
+        "effects": {
+          "onthewhite": -1,
+          "fragmentwinter": 1
+        }
+      }
+    },
+    {
+      "id": "waroftheroadscensored",
+      "name": "《路权战争：1450—1580》规制版",
+      "description": "威利斯福特在书中详尽描述了“路权战争”——一桩发生在非我们所在的历史中的事件。然而本书被去掉了大量书页；出版者的名字遭人涂黑；封面上还钉着一张语意不祥的纸条告知读者，威利斯福特已被“抹除”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "waroftheroadscensored",
+      "reading": {
+        "intro": "“在这重历史的过往中，长生者们取得过至少一次成功。他们促成了与白日铸炉的和平协定，其期限之长，足以让英格兰走完从早先四处征服到最终毁灭的路途。铸炉自己则吞噬了他们中的最伟大者。”",
+        "content": "威利斯福特称，英格兰王室成为了受控之火的君王，将他们的敌人或是消灭或是转化，从而征服欧洲，为圣斯帕克建立了宏伟的大教堂。与铸炉之盟也开始让他们付出代价。本书的最后几章完全缺失。",
+        "effects": {
+          "waroftheroadscensored": -1,
+          "fragmentsecrethistoriesb": 1
+        }
+      }
+    },
+    {
+      "id": "queensoftherivers",
+      "name": "《河川诸女王》",
+      "description": "一部超现实风格的当代戏剧，作者是名为莫妮卡·麦地那的神秘人物。剧中的诸位河川女王一一为人所杀。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "queensoftherivers",
+      "reading": {
+        "intro": "维斯瓦河女王被毒死。第聂伯河女王被鱼钩呛死。塔霍河女王被活活烧死……",
+        "content": "真相大白，杀人真凶正是台下的观众。剧本要求存活的女王处死所有未逃走的观众。一段清醒到令人意外的收场白提示说，河川之名与历史事件间的对应关系实为一种线索，可供探究我们所在的历史背后的隐秘历史。",
+        "effects": {
+          "queensoftherivers": -1,
+          "fragmentsecrethistories": 1
+        }
+      }
+    },
+    {
+      "id": "apolloandmarsyas",
+      "name": "《阿波罗与马西亚斯》",
+      "description": "某部失传歌剧的唱本，题材为阿波罗和马西亚斯之间的比试及此事的悲剧结局。唱词作者只留下了首字母缩写：“RKNJL”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "apolloandmarsyas",
+      "reading": {
+        "intro": "在神话原文中，马西亚斯因比试音乐败给了阿波罗而被剥皮，阿波罗事后亦为此后悔。在这个版本中，马西亚斯的皮有着更深层的历史……",
+        "content": "马西亚斯的皮拥有给予神谕之力，后被偷运至弗里吉亚，让库柏勒的女祭司作成了鼓面。在歌剧的高潮，这面鼓的震响将想要侵犯女祭司之人逼疯至自杀。最后，歌剧在最年幼的女祭司赞颂山松之美的忧愁歌声中收尾。",
+        "effects": {
+          "apolloandmarsyas": -1,
+          "fragmentheart": 1
+        }
+      }
+    },
+    {
+      "id": "skeletonsongs",
+      "name": "《骷髅歌》",
+      "description": "一部咏颂贪婪享乐的诗集，作者是传闻中从女继承人成为贵妇又成为诗人的阿拉贝拉·达斯克，该名很可能是伪名。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "skeletonsongs",
+      "reading": {
+        "intro": "阿拉贝拉在引言中解释说，她这本书本应有插图，但防剿局不会允许。她暗示插图仍存于某处。本书是致“寻找赤杯的帕西瓦尔爵士”的献礼。",
+        "content": "二十六颗悦人的果实，七种责罚，九座花园，四桩悔事。",
+        "effects": {
+          "skeletonsongs": -1,
+          "fragmentgrail": 1
+        }
+      }
+    },
+    {
+      "id": "burningofunburntgod",
+      "name": "《焚烧不焚之神》",
+      "description": "由波斯乡间的民间口传编集而成，编者为杰·维苟财·詹森。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "burningofunburntgod",
+      "reading": {
+        "intro": "詹森提出假说称，存在一位先于祆教的火神，祂的仪式即铁匠的仪式。",
+        "content": "詹森最后不情愿地得出结论，这位神祇是位女神。他认为性别或是其受到压制的原因。书中描述的仪式通常是阴森，甚至是可怖的。",
+        "effects": {
+          "burningofunburntgod": -1,
+          "fragmentforgeb": 1,
+          "ritetoolconsumefollower": 1
+        }
+      }
+    },
+    {
+      "id": "debellismurorum",
+      "name": "《墙垣之战》",
+      "description": "一部十八世纪史诗，作者托名为“索利浦西斯托斯”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "debellismurorum",
+      "reading": {
+        "intro": "这首诗概括性地描写了野兽、天气现象、神秘概念三者间的战争。战术部分写得相当具体。",
+        "content": "“二一相合，角者得彰。于是得血。”",
+        "effects": {
+          "debellismurorum": -1,
+          "fragmentedgeb": 1
+        }
+      }
+    },
+    {
+      "id": "onwhatiscontainedbysilver",
+      "name": "《论困于银镜之物》",
+      "description": "一部可怕的动物寓言集，讲述了现于镜面的恐怖。由三世纪署名“牧人者”所著，这本是近年新出的版本。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "onwhatiscontainedbysilver",
+      "reading": {
+        "intro": "一部可怕的动物寓言集，讲述了现于镜面的恐怖。由三世纪署名“牧人者”所著，这本是近年新出的版本。",
+        "content": "“镜中的处女/少女偏好兰花，而[镜后之人？]则偏爱杜鹃花。两种花在剪下后都不该放在抛亮的青铜器前。”附录中记有一个或能召唤这些存在的仪式，虽然其用途的细节尚不明确。",
+        "effects": {
+          "onwhatiscontainedbysilver": -1,
+          "fragmentlanternb": 1,
+          "ritetoolfollowerconsumelore": 1
+        }
+      }
+    },
+    {
+      "id": "truecompleteasclepian",
+      "name": "《对居屋根基的阿斯克利庇之谜真实而完整的记述》",
+      "description": "本书记述了“阿斯克利庇之谜”，是一部——据推测——更古老的文献的复制本，制作者署名“李利·格里斯”。书的内容不太可信，然而其在序言即明确提及了“无墙的居屋及其所伴的林地”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "truecompleteasclepian",
+      "reading": {
+        "intro": "本书很显然并非古卷，顶多称得上十分破旧。但书中记录了大量有意思的素材，特别是这样一个很有说服力的对比：将无墙无门的居屋与拥有七窍的人体相比较。",
+        "content": "“死亡的方向朝下，”书中这样解释，“孔雀之门被认为是一种裂缝，或是一处磨损。但从其他角度看，它更像是一张嘴——或者说是一种更珍贵的入口。”对门扉讨论中包括一种通过这些门召唤生物的仪式，虽然缺失了关键祷词。",
+        "effects": {
+          "truecompleteasclepian": -1,
+          "fragmentheartb": 1,
+          "ritetoolconsumeinfluence": 1
+        }
+      }
+    },
+    {
+      "id": "geminiad",
+      "name": "《双生姝丽》",
+      "description": "一本脆弱易破的手抄书，里面最引人瞩目的是一对同体孪生、光彩照人的忧郁美人形象和完整月相的图例。本书或能追溯到七世纪，而书中所用的语言——富奇诺语——则更加古老。书封面饰有珊瑚，书页边则十分锋利，足以割破咽喉。[我已备好翻译笔记，现在可以研究此书了。]",
+      "aspects": {
+        "knock": 2,
+        "tool": 1,
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "geminiad",
+      "reading": {
+        "intro": "本书描绘了一位司辰的性质与其教义，那是一位令静止之物结合，位于水之缘、月之底的司辰：双生巫女。书中的语言缠结，诗意，任性。我需要花些时间解开它。",
+        "content": "《双生姝丽》提醒我们：众所周知，双生巫女常常以双生女巫的形象现身——并且当其中一面饱足时，另一面仍然可以是饥饿的。这暗示了双生巫女和林地司辰间的联系，特别是与其中一位名为丝毧的守密人的——双生巫女自己是否算作林地司辰则依旧不明。且书中用大量笔墨描绘了二位一体的悲哀，即自她们仍为血肉之躯时便留存下来的悲哀。",
+        "effects": {
+          "geminiad": -1,
+          "geminiadread": 1,
+          "fragmentgraild": 1,
+          "fragmentheartd": 1,
+          "fragmentmothd": 1,
+          "riteinfluenceconsumeingredient": 1
+        }
+      }
+    },
+    {
+      "id": "geminiadread",
+      "name": "《双生姝丽》（已读）",
+      "description": "一本脆弱易破的手抄书，里面最引人瞩目的是一对同体孪生、光彩照人的忧郁美人形象和完整月相的图例。本书或能追溯到七世纪，而书中所用的语言——富奇诺语——则更加古老。书封面饰有珊瑚，书页边则十分锋利，足以割破咽喉。[我已从书中汲取了所有可汲取的知识，不过书本身仍带有法力。]",
+      "aspects": {
+        "knock": 2,
+        "tool": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "geminiadread"
+    },
+    {
+      "id": "orchidtransfigurations1",
+      "name": "《兰花变容·卷一：筵宴》",
+      "description": "一部玫瑰十字会式寓言的合集，推测为罗伯特·福路德所著，丛书第一卷。本书为后来的英译本。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "orchidtransfigurations1",
+      "reading": {
+        "intro": "本书的插图的确夺人眼球；使人面色潮红，合上书后仍在眼底印照不去。",
+        "content": "“人必先噬人，而后人噬之。为人噬者不可逆，如人之诞世不可逆。”",
+        "effects": {
+          "orchidtransfigurations1": -1,
+          "fragmentgrail": 1,
+          "glimmering": 1
+        }
+      }
+    },
+    {
+      "id": "orchidtransfigurations2",
+      "name": "《兰花变容·卷二：生诞》",
+      "description": "一部玫瑰十字会式寓言的合集，推测为罗伯特·福路德所著，丛书第二卷。本书为后来的英译本。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "orchidtransfigurations2",
+      "reading": {
+        "intro": "福路德，或假冒的福路德，以松树骑士寻找朱砂杯的故事暗示了炼金术传统的“红化法”与更古老的圣杯传承间的对应关系。",
+        "content": "“于产床中寻觅朱砂杯”，这是交给松树骑士的任务。令他惊奇的是，产床旁的助产士竟是山峦之母。带着敬畏之情，他阉割了自己，并将自己的皮剥下。警醒风暴欢乐地从他的残躯中冲出。”",
+        "effects": {
+          "orchidtransfigurations2": -1,
+          "fragmentgrailb": 1
+        }
+      }
+    },
+    {
+      "id": "orchidtransfigurations3",
+      "name": "《兰花变容·卷三：午时》",
+      "description": "一部玫瑰十字会式寓言的合集，推测为罗伯特·福路德所著，丛书第三卷。本书为后来的英译本。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "orchidtransfigurations3",
+      "reading": {
+        "intro": "一段山峦之母与警醒风暴间的长对话描述了山峦与风暴的下场，也描述了他们如何规避此类下场。",
+        "content": "“然而我们须用刀、”以狮背为王座者说：“绞索、火焰、<b>唤醒之语</b>对抗穿过三膜之门者。令无人可从此处通过：这是我们的法则，也是太阳的法则。”",
+        "effects": {
+          "orchidtransfigurations3": -1,
+          "fragmentheart": 1
+        }
+      }
+    },
+    {
+      "id": "wainscothistories",
+      "name": "《饰壁史话》",
+      "description": "副标题为“发生在墙壁背后的故事”：非常规历史之杂录，威廉·戈尔编纂。书中记有数个不广为人知的战役和从未载于地图的国家，文风戏谑，明显带有虚构成分。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "wainscothistories",
+      "reading": {
+        "intro": "戈尔并未直接提及漫宿，但其通篇拐弯抹角的比喻，从“在岁月阶梯上攀升”，到“睡梦之门”，再到“蓝色晓光”都透露出他触碰到了不可见的世界。",
+        "content": "“在那个时代，谈论太阳的分裂是件平常事；当时者便是由此了解蛮族势力连带他们粗鄙的诸神的入侵的。”",
+        "effects": {
+          "wainscothistories": -1,
+          "fragmentsecrethistoriesb": 1
+        }
+      }
+    },
+    {
+      "id": "chioneatabydos",
+      "name": "《喀俄涅在阿拜多斯城》",
+      "description": "一部以白雪女神在色雷斯的阿拜多斯城逗留九年为题材的戏剧，作者署名“阿波罗·织火者”。本剧的1892年版本在伦敦大获成功，该版本——似乎——是在那一年从更加古老的希腊语文本转译而来的。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "chioneatabydos",
+      "reading": {
+        "intro": "一个名为“喀俄涅”的存在于暴风雪中降临，要求紧闭城门。随着阿拜多斯城陷落于她的咒语，死者苏生回归，却闭口不言……",
+        "content": "八年间，这座城市充斥着缓慢的死亡、霜冻的迷醉与沉默的美。但到了第九年，一场“呐喊谋反”发起，意在颠覆喀俄涅所要求的静寂。谋反者打开城门，放一个身负伤疤的男人前来拽住喀俄涅的头发将她拖出城外。炎夏复又回返，而谋反者们却死于悔恨。",
+        "effects": {
+          "chioneatabydos": -1,
+          "fragmentwinterb": 1
+        }
+      }
+    },
+    {
+      "id": "irreproachabletraditionssocietynobleendeavour",
+      "name": "《高贵之举社团……》",
+      "description": "《高贵之举社团那无可指摘的传承》。高贵之举社团的成员一经入团便继承了高贵的名字：“帕西瓦尔”、“罗兰”、“欧辛”。他们的灵感源自受控之火，在某些重历史中，不列颠蒙后者恩赐获得了超乎想象的力量。一个名叫萨缪尔·帕特里吉记录下了他们的事迹。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "irreproachabletraditionssocietynobleendeavour",
+      "reading": {
+        "intro": "他们的“举动”倒可称高贵——放一场神秘的，能将他们变成超越人类之物的大火。但这种转换罕有成功，大部分情况下他们会变成一堆难称高贵的灰烬。",
+        "content": "帕特里奇声称他在成功飞升者身上发现了一个规律：他们都穿过牡鹿之门，获得了通晓者之位。在飞升开始时，他们全都吟诵了巧匠祷文，又或是比那还厉害的祷词。而且他们都很富有。",
+        "effects": {
+          "irreproachabletraditionssocietynobleendeavour": -1,
+          "fragmentforgeb": 1
+        }
+      }
+    },
+    {
+      "id": "roseofnuriel",
+      "name": "《努列尔宝训集》",
+      "description": "集结成册的绳结姐妹会教喻；该秘传默观修会存在于每一重历史，且在某些重历史中拥有莫大的力量。本书由署名“努列尔”者编集，是致圣特里丰的献礼。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "roseofnuriel",
+      "reading": {
+        "intro": "努列尔解释说，圣特里丰以“流血与出产的她”和“开启的她”之名展现了隐秘的奇迹。圣特里丰于是开启了通往太阳居屋的道路；圣特里丰于是经由“伟大生诞”，飞升成为不死之人。",
+        "content": "圣特里丰的飞升始于他穿过“双角之门”。他随后学习了“酩酊祷文”——此文因极度神圣而未被努列尔录于此书。且努列尔严厉地解释说，为了获得“伟大生诞”的<b>七道印记</b>，圣特里丰摄食了“不仅有灵魂已逝之人，还有灵魂犹存之人。”",
+        "effects": {
+          "roseofnuriel": -1,
+          "fragmentgrailb": 1,
+          "fragmentknockb": 1
+        }
+      }
+    },
+    {
+      "id": "roseofhypatia",
+      "name": "《希帕提娅宝训集》",
+      "description": "集结成册的绳结姐妹会教喻；该秘传默观修会存在于每一重历史，且在某些重历史中拥有莫大的力量。本书由署名“希帕提亚”者编集，是致圣宁法的献礼。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "roseofhypatia",
+      "reading": {
+        "intro": "本书称圣宁法“并非由人生下，而是栽培而成”。“希帕提娅”指出，成为圣徒的这缕智识寄居在一名罪人的尸体上，为得是使这名罪人得蒙赦罪。",
+        "content": "“亡者并非都通过冬之门进入漫宿。亡者并非都能够进入漫宿。”",
+        "effects": {
+          "roseofhypatia": -1,
+          "fragmentheartb": 1,
+          "fragmentmothb": 1
+        }
+      }
+    },
+    {
+      "id": "roseofwaznei",
+      "name": "《瓦兹内宝训集》",
+      "description": "绳结姐妹会一个遭人唾弃支派的异端教喻；该秘传默观修会存在于每一重历史中。本书由署名“瓦兹内”者编集，是致圣勒庇爵的献礼。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "roseofwaznei",
+      "reading": {
+        "intro": "瓦兹内偏好的支派——“真实姐妹会”——一直在追随圣勒庇爵，以无情的光之司辰，瞳中扉的名义寻求飞升。圣勒庇爵失败了，这或许是因为他被规模更大的姐妹会抓获并勒毙在了仪式中，不过瓦兹内为寻求成功者指明了方法。",
+        "content": "“于梦境寻觅，于漫宿寻觅。唯有穿过牡鹿之门者才能获得第三印记。此人必须穿过林地。此人必须攀至纯白之门。在格里比的视线中，牡鹿之门等待着负光者前来。”",
+        "effects": {
+          "roseofwaznei": -1,
+          "fragmentlanternb": 1,
+          "fragmentedgeb": 1
+        }
+      }
+    },
+    {
+      "id": "sunsetpassages",
+      "name": "《日落殊途》",
+      "description": "本书网罗了无敌太阳教会——即第三和第四史中的飞升者——的典礼中的各种祷文，仪式和赞歌。该教派在置闰——即太阳遭到分裂时——发生分裂，留存下来的部分不再具有不可小觑的势力。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "sunsetpassages",
+      "reading": {
+        "intro": "教会在骄阳分裂前就尊崇它——但在骄阳尚完整时，它日后的复数个自我就已经被认为是它的具名者了。而昕旦执掌的自然是死亡和进入居屋的道路。",
+        "content": "“纯白之礼”据称是纪念司辰昕旦的仪式，在黎明前冷冽之时的葬礼中施行。这份文献提醒道，在念诵仪式祝词时，所有的刀刃都不能出鞘，“否则尸体将不再沉默。”",
+        "effects": {
+          "sunsetpassages": -1,
+          "fragmentwinterb": 1
+        }
+      }
+    },
+    {
+      "id": "gospelzacchaeus",
+      "name": "《撒该福音》",
+      "description": "一本关于弥赛亚拿撒勒和他事迹的极其异端的记录，描述了他通过洞开肉体飞升入漫宿的故事。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "gospelzacchaeus",
+      "reading": {
+        "intro": "“他身上的伤口其数为七，居屋之门其数为七，司辰的次级性相其数为七，性相<b>启</b>凌驾于上，正因蚁母乃是救恩之母。”",
+        "content": "这本书描述了一个<b>仪式</b>，可将一具尸体转为半死，“以纪念为林地流血的他。”这个仪式需要一具尸体和足够的法力，作者建议使用<b>冬</b>之密传中的祷文，以及一名被林地之力触碰过的助手。",
+        "effects": {
+          "gospelzacchaeus": -1,
+          "fragmentknockc": 1,
+          "ritefollowerconsumeingredient": 1
+        }
+      }
+    },
+    {
+      "id": "matthiasamethystloss",
+      "name": "《马提亚斯与紫晶成虫：失去》",
+      "description": "一本对密教爱情的记录。一个名叫“亚伦之子帕拉”的人宣称他在一昼一夜间写出了本书，作作为加入“遗忘家族”大马士革分部的投名状的一部分——该教团戒律森严，由抛弃前尘后事的不死者组成。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "matthiasamethystloss",
+      "reading": {
+        "intro": "“居屋的法则禁止马提亚斯去爱，而林地的习俗也禁止那只成虫停留。所以在她亮出阿拉卡之城的剪刀时，他最后一次将她唤来；她使他忍痛减去她背后的翅膀，这样她就能留下；而他使她忍痛剪去他存放男性种籽的部位，这样他们就能远离“罪恶行径”。这便是满含血与欢乐的爱情。我们已将马提亚斯逐出居屋。”",
+        "content": "“地图之疆仪式是浪游旅人给与我们的。它即当年马提亚斯用于召唤紫晶成虫的仪式，不过它也和其他许多召唤仪式一样，可以用于唤来几乎所有的存在——只要借助适当的工具，施加适当的影响。请温柔地使用这个仪式，不要忘记那些为互相结合而承受过极度痛苦的具名者和长生者。”",
+        "effects": {
+          "matthiasamethystloss": -1,
+          "fragmentmothc": 1,
+          "ritetoolconsumeinfluence": 1
+        }
+      }
+    },
+    {
+      "id": "matthiasamethysttransformation",
+      "name": "《马提亚斯与紫晶成虫：嬗变》",
+      "description": "一本对密教爱情的记录。一个名叫“伊亚沃苟斯”的人宣称他在一夜间写出了本书，作为加入“遗忘家族”阿勒颇分部的投名状的一部分——该教团由不献身于任何司辰的不死者组成。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "matthiasamethysttransformation",
+      "reading": {
+        "intro": "“我们已逐出马提亚斯，也对紫晶成虫施加了诅咒，但我们在梦中看着他们。我们看到他们将己身献与铸炉，誓要改变自己，飞升，获得新生。他们向火而飞。”",
+        "content": "“这是马提亚斯和成虫所采取的行动的第一步，开启了他们飞升成神的道路。他们升出了我们的视野之外，但他们的火焰或许仍在锤炼场燃烧。”",
+        "effects": {
+          "matthiasamethysttransformation": -1,
+          "fragmentforgec": 1
+        }
+      }
+    },
+    {
+      "id": "matthiasamethystpursuit",
+      "name": "《马提亚斯与紫晶成虫：追寻》",
+      "description": "一本对密教爱情的记录。一个名叫“梅克”的人宣称他在一夜间写出了本书，作为加入“遗忘家族”底比斯分部的投名状的一部分——该教团由以水的功用掩盖自己行迹的不死者组成。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "matthiasamethystpursuit",
+      "reading": {
+        "intro": "“马提亚斯给我们下了一道挑战，要我们在林地里猎捕飞蛾麾下的具名者，用以丰富他的飞虫标本。紫晶成虫原先在与双生巫女玩耍，却又重回林地去寻求飞蛾的原谅。而飞蛾，不知出于一时兴起还是出于忏悔，派她离开林地去将那名长生者诱入泥沼般的噩梦。”",
+        "content": "“马提亚斯爱着成虫。（真的吗？长生者能够恋爱？还是他们的灵魂中的那个器官已干瘪到无法挽回？）成虫爱着马提亚斯。（真的吗？还是她只是一时兴起？）他追寻着她穿过林地，但她在最后绕开了噩梦泥沼，而后他们一起躺在逐渐变亮的边境。于是他们学会了杯之欢愉，这是他们为自己赢得的密传。”",
+        "effects": {
+          "matthiasamethystpursuit": -1,
+          "fragmentgrailc": 1
+        }
+      }
+    },
+    {
+      "id": "franklinbancroftdiaries",
+      "name": "《富兰克林·班克罗夫特勋爵1750-1790年间日记》",
+      "description": "富兰克林·班克罗夫特勋爵通过“玫瑰女巫”菲奥娜·艾尔郡接触了制花人之术。从此他青云直上，以为上流社会提供密教法事和秘密享乐为生，直到在1790年突然音讯全无为止。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "franklinbancroftdiaries",
+      "reading": {
+        "intro": "班克罗夫特是个极有天赋的学徒，但他把自己的精力投在一些徒劳无益且异想天开的计划：为漫宿的灵体举办“摘葡萄大赛”，教擂击者玩杂耍，还有为玫瑰女巫艾尔郡变出想象中的鲜花风暴，后者甚至连与他交合都坚决拒绝。班克罗夫特花了二十页篇幅哀叹此事。",
+        "content": "本书记载的梵咒既高等又艰深，这种魔法可以让一个人将其灵魂献给守夜人，开启飞升至居屋之路。班克罗夫特一喝高就会夸耀自己能背诵这一梵咒。他还给它谱上曲，在沃克斯豪尔花园的烟火大会上表演。",
+        "effects": {
+          "franklinbancroftdiaries": -1,
+          "fragmentlanternc": 1
+        }
+      }
+    },
+    {
+      "id": "indignitiesobliviate",
+      "name": "《惯于欺瞒的忘却互助会造成的种种侮辱伤害》",
+      "description": "本书的作者只留下姓名首字母“C.R.O.D”，不清楚他是否为由不死者学徒组成的“忘却教团”的新成员。本书成书于十六世纪，在该教团——如果相信作者的说法——的权势从巅峰跌落之后。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "indignitiesobliviate",
+      "reading": {
+        "intro": "“<b>第五十八条。</b>他们既声称继承了遗忘家族的传统，却又在<b>不方便</b>执行时便将家族最为美丽亦最为神圣的典礼<b>摒弃不用</b>。<b>第五十九条</b>……”",
+        "content": "“在此我向大家披露互助会用于召唤灵体“汽灵”的仪式。他们<b>严重背叛</b>家族传统，竟不将冬之新晋者和蛮横锤骨与启之密传一起献上，<b>而是</b>将启之新晋者和锤骨与冬之密传一起献上！这不能忍——”",
+        "effects": {
+          "indignitiesobliviate": -1,
+          "fragmentwinterc": 1,
+          "ritetoolfollowerconsumelore": 1
+        }
+      }
+    },
+    {
+      "id": "furioustantra",
+      "name": "《狂怒密续》",
+      "description": "通说原文是由雷电在橡树树皮上烧灼而成，后被灵媒兼烟火技师雅各布·奥利弗·贵玛玽斯通发现并誊写下来。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "furioustantra",
+      "reading": {
+        "intro": "该密续讲述了怒气的用途和危险性。它提醒说，怒气并不总能捱得过转化。",
+        "content": "“满月显现，百兽复生，一条蜥蜴也不可屠戮，因为它可能是你。”",
+        "effects": {
+          "furioustantra": -1,
+          "fragmentedgec": 1,
+          "ritefollowerconsumetool": 1
+        }
+      }
+    },
+    {
+      "id": "devouredtantra",
+      "name": "《贪食密续》",
+      "description": "外交官兼教士斯坦尼斯拉夫·约翰·沙勒从某位赤红长生者的藏书中誊来了此文。不过，他这篇手抄稿现在成了凯尔伊苏姆某人的私藏。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "devouredtantra",
+      "reading": {
+        "intro": "《贪食密续》警告了食欲的用途和危险性，却将大段篇幅用于描写那些“拥有星形肢体的引发饥饿者”，行文间透出明显的喜爱之情。",
+        "content": "“先由形态不一的众口啖饮，再用胃中的无尽烈火吞食。”",
+        "effects": {
+          "devouredtantra": -1,
+          "fragmentgrailc": 1
+        }
+      }
+    },
+    {
+      "id": "ceaselesstantra",
+      "name": "《无休密续》",
+      "description": "先锋派编舞家尼古拉斯·凯尔创作的气势汹汹的芭蕾舞中据说编入了此密续。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "ceaselesstantra",
+      "reading": {
+        "intro": "《无休密续》主旨在于警告人们一种名为“擂击者”的生物，却又在最后给出了召唤该生物的咒语。据其所述，擂击者可以学会任何一种舞蹈，但它们只喜欢学那一种。",
+        "content": "“不休止他物者，自身亦无休止。”",
+        "effects": {
+          "ceaselesstantra": -1,
+          "fragmentheartc": 1
+        }
+      }
+    },
+    {
+      "id": "knownunknowntantra",
+      "name": "《昧知密续》",
+      "description": "作者卡洛斯·加西亚·绍里，比利牛斯山中痴狂的神秘主义者，以会用三种语言背诵本文而闻名，尽管他从未造访过那片次大陆。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "knownunknowntantra",
+      "reading": {
+        "intro": "《昧知密续》讲述了一场前往漫宿“纯白之门”的旅行，话语在那扇门后终止。它给出了一个只要用于正确的时间和地点，便能抵达那扇门的梵咒。",
+        "content": "“灯发出的光只能揭示林中树影的间隙。”",
+        "effects": {
+          "knownunknowntantra": -1,
+          "fragmentlanternc": 1
+        }
+      }
+    },
+    {
+      "id": "encirclingtantra",
+      "name": "《盘绕密续》",
+      "description": "探险家兼企业家T·埃弗莱特·杜普兰提斯曾经试图劫掠这篇经文所在的寺庙。他的命运被记在了附录里。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "encirclingtantra",
+      "reading": {
+        "intro": "《盘绕密续》提及了“巨蛇之门”，即那扇有时也称作蜘蛛之门的饥饿门户、蚁母的神圣之门、兜颈贵胄穿过的门。",
+        "content": "该密续记载了一篇祷文，却也不忘提醒，它的法力不足以从猎手之门到达巨蛇之门。“路若无终点，其本身即终点”，文中不忘补充道。",
+        "effects": {
+          "encirclingtantra": -1,
+          "fragmentknockc": 1
+        }
+      }
+    },
+    {
+      "id": "shavenlocktantra",
+      "name": "《剃度密续》",
+      "description": "又称《剃发之人》。据传说，连善于变形的瓦纳拉猴族都拒绝承认这篇密传。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "shavenlocktantra",
+      "reading": {
+        "intro": "该密续大谈特谈那些准备抛弃旧我，寻求更高超新我的人。它警告说，一旦转变真正开始——即“越过第三印记”——回归旧我将变得危险而痛苦。",
+        "content": "“向大地低声吐露你的秘密，用火将它们烧毁，弃至海中。即便如此，它们依然会紧抓你的头发”，密续如此提醒道。它给出了一个密教谜语，称其有时能解答猎手之门的谜语。",
+        "effects": {
+          "shavenlocktantra": -1,
+          "fragmentmothc": 1
+        }
+      }
+    },
+    {
+      "id": "tantraworms",
+      "name": "《蠕虫密续》",
+      "description": "昆虫学家朱莉安娜·萨斯托斯基最终坚称本书为寄居在人类体内的昆虫所作。她从来没为她的说法提供过证据。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "tantraworms",
+      "reading": {
+        "intro": "该密续里罗列了多种不怎么实用的对策以对付蠕虫，即“非蛇之蛇”。<b>蛾</b>与<b>冬</b>与它们最为接近，所以了解它们的弱点，但两者又各具危险。狮子匠可以击溃蠕虫，但此法不建议凡人使用。",
+        "content": "“蠕虫总是迫不及待地要宿在我们身上。下列做法可令我们的身体不适宜它们居住。”文中自带图解。那些图解不但令人不忍卒看，而且里面描绘的任何一种做法都会要了受术者的性命。",
+        "effects": {
+          "tantraworms": -1,
+          "fragmentwinterc": 1
+        }
+      }
+    },
+    {
+      "id": "bookofcentipede",
+      "name": "《蜈蚣之书》",
+      "description": "1860年代中期，某位“伊女士”曾展示过一种娱乐方式，她称其源头来自本书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bookofcentipede",
+      "reading": {
+        "intro": "“蜈蚣总能找到进入黑暗的方法。当她因此受罚时，她的反应很难受，在漫宿在弥阿都是。”",
+        "content": "“大河在沙地流淌，从神话流入传说。画中之河则向另一个方向流淌。其中之一已对蜈蚣关闭，但她有时仍能找到方法进入。”",
+        "effects": {
+          "bookofcentipede": -1,
+          "fragmentsecrethistoriesc": 1
+        }
+      }
+    },
+    {
+      "id": "accountkanishkspidersdoor",
+      "name": "《迦腻色伽在蜘蛛之门前的经过》",
+      "description": "这份记录的作者是洛克·卡胡利，受迦腻色伽所害者兼其情人，也许是在死后写下。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "accountkanishkspidersdoor",
+      "reading": {
+        "intro": "迦腻色伽欲成为具名者。为达成这一目标，他将洛克·卡胡利变成承载他食欲的容器，承诺与其一同飞升。在蜘蛛之门前，他背叛了他的情人……",
+        "content": "千夫长耳听此背叛之言，于是强迫迦腻色伽侍奉自己。千夫长不容违抗。洛克·卡胡利则留下撰写本书，描述那些关于抗争与竞夺的公开的魔法。",
+        "effects": {
+          "accountkanishkspidersdoor": -1,
+          "fragmentedgec": 1
+        }
+      }
+    },
+    {
+      "id": "stumm",
+      "name": "《噤声！》",
+      "description": "一盘硝酸盐胶片，标签上写着“<b>STUMM!</b>（<b>噤声!</b>）”——意为“沉默”，或者“哑”。旁边颤抖的的字迹则是导演的姓名：“杰尼克·克罗塞”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "stumm",
+      "reading": {
+        "intro": "放映机嘎吱作响，静静地将画面投在墙上。影片讲述了一名研究禁忌科学的愚蠢学生的故事，他招募了一名舞者来诱使亡者通过世界表皮上的破绽重返世界。这是一个虚构的故事，但片中的标题字幕却写着“落日行动”……",
+        "content": "仪式的描述极为详尽，令人毛骨悚然。先是世界的破绽，一种在流光溢彩的涂料中闪闪发光的影响。然后是舞者怎样跳出令人无法抗拒的节拍。然后是学者复述行动步骤；而此刻，烟雾般的亡者正盘旋着穿过破绽处来吞吃他！影片最后定格在舞者警觉的双眼。她从一开始就打算这么做吗？",
+        "effects": {
+          "stumm": -1,
+          "fragmentwinterc": 1,
+          "dread": 1,
+          "ritefollowerconsumeinfluence": 1,
+          "funds": -1
+        }
+      }
+    },
+    {
+      "id": "vinzantinscriptions",
+      "name": "《文赞特铭文》",
+      "description": "埃弗莱特·文赞特从安纳托利亚的一处悬崖誊下了这份铭文，他因在那里被闪电击中后幸存而闻名遐迩。他死于七年后的同一天。传说称，在他死后，他的骨头仍然触手火热。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "vinzantinscriptions",
+      "reading": {
+        "intro": "很久以前，据绳结姐妹会的描述，铸炉爱上了名为骄阳的司辰。赤杯早就期待他们的结合，且杯之女祭司也预言了此事……",
+        "content": "文献的其余部分是杯之女祭司幸灾乐祸地评论将要到来的塑形，夹杂着来自侍奉环杉，尤其是侍奉双角利斧的众姐妹会的警告与哀叹。即便如此，文中仍附有一个至铸炉的祷文。",
+        "effects": {
+          "vinzantinscriptions": -1,
+          "fragmentforgec": 1
+        }
+      }
+    },
+    {
+      "id": "larquebinecodex",
+      "name": "《拉奎伯斯写本》",
+      "description": "克里斯托弗·拉奎伯斯声称自己从马尔马拉海岸边一个女巫家庭买到了两本本书的手抄复制品。第三本“献给了大海”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "larquebinecodex",
+      "reading": {
+        "intro": "双生女巫来自西方，诞自两个子宫，两人一为公主，一为怪物。然而她们自降生起便彼此相爱，并暗中相会“寻求结合”。",
+        "content": "当大旱降临时，统御那片土地的诸王试图献祭公主与女巫，于是她们横渡大海。当被绝望攫住时，她们纵身跳入深不见底的海水……并发现了画中之河，于彼处凭借赤杯的提携进入漫宿。然而本书以谴责赤杯结束……",
+        "effects": {
+          "larquebinecodex": -1,
+          "fragmentheartc": 1
+        }
+      }
+    },
+    {
+      "id": "againstsisterhoodknot",
+      "name": "《对绳结姐妹会……》",
+      "description": "《对绳结姐妹会与其堕落习俗之批判》。“伪寻爱绮梦式”耶罗尼米斯写下这篇狂怒的长篇大论，抨击姐妹会对他所属的“无敌太阳教会”的邪恶影响。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "againstsisterhoodknot",
+      "reading": {
+        "intro": "耶罗尼米斯宣称，绳结姐妹会所侍奉的诸神灵做了如下安排：轰雷之皮爱着环衫，而圣杯将他摧毁，作为利斧的至亲遭到摧毁的补偿。耶罗尼米斯的文字在此处因激怒而变得语无伦次。",
+        "content": "最终，耶罗尼米斯恢复了镇静，开始描述轰雷之皮如何由孔雀之门进入漫宿。这一点，耶罗尼米斯坚称，是“最最可厌的，虽说最可厌的那扇门向来可厌”。",
+        "effects": {
+          "againstsisterhoodknot": -1,
+          "fragmentsecrethistoriesd": 1
+        }
+      }
+    },
+    {
+      "id": "morphycodex",
+      "name": "《墨菲写本》",
+      "description": "绳结姐妹会的一位女祭司在本书中宣称自己领悟了轰雷之皮降生的真意。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "morphycodex",
+      "reading": {
+        "intro": "本书作者为圣杯、环杉与双角斧——姐妹会所崇敬的神灵——记了一功，称祂们同意在众位居屋之司辰与被前者取代的司辰间缔结的最终条约：轰雷之皮爱着环杉，而圣杯将他摧毁，作为双角斧的手足遭到屠戮的补偿。",
+        "content": "轰雷之皮由孔雀之门进入漫宿，“这是双生巫女从未获得过的特权：不过那时她们的功绩也小得多。”作者承认由孔雀之门进入不太行得通，但坚称在那种情况下别无他法。",
+        "effects": {
+          "morphycodex": -1,
+          "fragmentsecrethistoriesd": 1
+        }
+      }
+    },
+    {
+      "id": "leoninetantra",
+      "name": "《狮子密续》",
+      "description": "在《狮子密续》最为臭名昭著的译本中，阿什利·菲利普斯被列为翻译者，但书的序言明确否定译者的存在。这种令人困惑之处正是提及兜颈贵胄的书籍的特征。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "leoninetantra",
+      "reading": {
+        "intro": "本文隐晦地描述了兜颈贵胄怎样用数不胜数的方法对大河流域抵抗外族侵略者的战争施加影响，“虽然从某种意义上来说，它们也是侵略者”。",
+        "content": "“狮子是可以创造的，有别于创造孩童，亦有别于创造文字，而是如同创造武器。兜颈贵胄通过偷窥司辰的事务掌握了创造狮子的方法，且并非所有的狮子现都在侍奉黄金将军。”",
+        "effects": {
+          "leoninetantra": -1,
+          "fragmentedged": 1
+        }
+      }
+    },
+    {
+      "id": "incandescenttantra",
+      "name": "《炽热密续》",
+      "description": "为人古怪的钢铁大亨迈克尔·布洛克利喜欢引用该密续的语句。此人死于工厂火灾。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "incandescenttantra",
+      "reading": {
+        "intro": "记载了与某个名叫“坩埚公”的存在的对话。此公警告说自己的主人——燃烧的女王胃口巨大，且她与骄阳分享的赤裸欲望也极为危险。即便如此，他依然口称对女王忠心耿耿。",
+        "content": "“改变的仪式必然是毁灭的仪式，而若想催生巨变，野蛮的破坏必不可少。”",
+        "effects": {
+          "incandescenttantra": -1,
+          "fragmentforged": 1
+        }
+      }
+    },
+    {
+      "id": "thirstingtantra",
+      "name": "《干渴密续》",
+      "description": "禁酒活动家C·G·布里尔在宣传小册子里刊登了该密续的部分内容；当这本小册子变得过于流行时，人们不得不将其回收销毁。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "thirstingtantra",
+      "reading": {
+        "intro": "一篇对干渴的诸多种类、用途及效果的专题研究。",
+        "content": "该密续描述了解除干渴如何能令凡人升为干渴之神的侍奉者，但也警告了为解除普通的干渴而拒绝更稀有干渴的后果。“一个口中干渴的人，多么强大的人啊，他的心智与世间的动态紧紧相连，将会从彼处回归这个动态的世间。”",
+        "effects": {
+          "thirstingtantra": -1,
+          "fragmentgraild": 1,
+          "ritetoolconsumeingredient": 1
+        }
+      }
+    },
+    {
+      "id": "flayedtantra",
+      "name": "《剥皮密续》",
+      "description": "据记载，该密续由一个人称“褪皮”的神秘人物口述而来，介绍了神话中的那伽大蛇的很多习性。《剥皮密续》在亚历山大·斯派鹭那本充满被害妄想的小册子里占很大比重。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "flayedtantra",
+      "reading": {
+        "intro": "“褪皮”曾为兜颈贵胄的一员，但它与同胞兄弟决裂，转而跟随轰雷之皮作无尽的舞蹈。",
+        "content": "当“褪皮”褪掉自己的皮后，它便得到了书写密续所需的墨汁。它不得不面对同族的愤怒。下文是它抵挡同族用的祷文。",
+        "effects": {
+          "flayedtantra": -1,
+          "fragmentheartd": 1
+        }
+      }
+    },
+    {
+      "id": "watchfultantra",
+      "name": "《警夜密续》",
+      "description": "因导致达菲德·琼斯和梅雷迪斯·布莱恩之死而臭名昭著；这两位早年间的物理学家都称自己拥有该书的唯一抄本，最终于1840年进行了一场决斗。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "watchfultantra",
+      "reading": {
+        "intro": "该密续描述了几种洞明密教启示的过程，包含一个或能为从“猎手之门”到达“巨蛇之门”指路的法术——后者在西方通常称作蜘蛛之门。",
+        "content": "“太阳素常在指定的时刻穿过居屋。自太阳分裂后，这一时间变得无法确定。”",
+        "effects": {
+          "watchfultantra": -1,
+          "fragmentlanternd": 1,
+          "ritetoolfollowerconsumelore": 1
+        }
+      }
+    },
+    {
+      "id": "twinserpenttantra",
+      "name": "《孪蛇密续》",
+      "description": "就在大战打响前夕，“亚历山大·斯派鹭”——基本确定为假名——出版了宣称“蛇身贵族”影响了国际关系的传单。名为《孪蛇密续》的文章是其主要灵感来源。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "twinserpenttantra",
+      "reading": {
+        "intro": "《孪蛇密续》描述了兜颈贵胄——一门起源不明的世家望族——如何参与祷告，献祭并作诗祝颂钥匙巨蛇、十字路孪生子和镜子女王。“那迦盘绕，那迦现身于创口，那迦饶过已被伤害者。”",
+        "content": "文献将兜颈贵胄描写为“从其死亡的历史逃入其未死的历史”，声称它们现有一百零八名，然而——作为许多双生异象中的一例——它们在跨出其死亡的史传前，只有五十四名。",
+        "effects": {
+          "twinserpenttantra": -1,
+          "fragmentknockd": 1,
+          "ritefollowerconsumeingredient": 1
+        }
+      }
+    },
+    {
+      "id": "firecircletantra",
+      "name": "《旋火密续》",
+      "description": "西欧已知现存的唯一一份抄本在1892年于大英图书馆失盗。一个叫做哈维·哈丁顿的人承认这是自己的犯行，并称已在无法控制的奇异冲动下，就着黄油和大蒜吃掉了本书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "firecircletantra",
+      "reading": {
+        "intro": "文中的兜颈贵胄乞求林地能奋起吞噬前来进犯的帖木儿军队。“斑纹王”、“蜂蜜树”与“海之孪生子”都拒绝了它们，直到它们向一个穴居于地洞的守秘者寻求帮助……",
+        "content": "携带着“穴居于地洞的守秘者”给与的勒索材料，兜颈贵胄们第二次向林地诸神灵请愿，并获得成功。帖木儿的军队四分之一为蜜蜂所噬，四分之一投水而亡，四分之一“解甲脱衣，蜕至无物。”——",
+        "effects": {
+          "firecircletantra": -1,
+          "fragmentmothd": 1
+        }
+      }
+    },
+    {
+      "id": "asthesunhiscourse",
+      "name": "《其躔如日》",
+      "description": "退休士兵，时而以收费员为职业的“桥上的”乔伊写下了这首史诗，内容是亚历山大在与阿契美尼德王朝交战时，于伊苏斯做出无法解释的撤退决定，随后回师马其顿的故事。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "asthesunhiscourse",
+      "reading": {
+        "intro": "亚历山大与万王之王大流士在伊苏斯会见了三日三夜。第一日，两人互相威胁；第二日，互予承诺；第三日，互换秘密。大流士向亚历山大道出了某些惊人之语，令后者不得不退回帐中思考“力量之事与支配之事”。",
+        "content": "第四日黎明，亚历山大宣布：“日之躔回归其始，吾之躔亦如是。”他就此回师马其顿，并将质疑此决定的两名将领处以极刑。他带回了“目盲之神的数个名字”和“神圣背叛仪式”：对此约珥以为，若无背叛，战争本会结束。",
+        "effects": {
+          "asthesunhiscourse": -1,
+          "fragmentedged": 1,
+          "ritefollowerconsumetool": 1
+        }
+      }
+    },
+    {
+      "id": "concursumdiaries",
+      "name": "《聚点日记》",
+      "description": "探险家及杀人犯拉尔斯·韦斯特格伦的日记。不巧的是，他为了防人耳目将其翻译成了弗里吉亚语。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "concursumdiaries",
+      "reading": {
+        "intro": "“世界上存在地图，存在传说，存在蕴含传说的地图，与有关地图的传说。漫宿的面相存于所有这些之中，如同水存于沼泽、杯盏与天空中。”",
+        "content": "韦斯特格伦描述了一系列漫宿内的探险。他着重于冒险经历的种种细节——色彩，景色，质感——而不是实际行为。他的确警告说漫宿每年都在变化，不过也像读者了保证门扉一直不变。“那些门也许会关合，但永远不会消失。起码有凡人留在漫宿时如此。我们在这儿就像老鼠。”",
+        "effects": {
+          "concursumdiaries": -1,
+          "fragmentlanternd": 1
+        }
+      }
+    },
+    {
+      "id": "ironbook",
+      "name": "《铁之书》",
+      "description": "利米亚教团的指南书。该教团由类不死者组成，占据了罗马行省西斯班尼亚·加拉埃西亚，利米亚河源头一块隐秘的飞地。本指南的编者署名梅莱雷·伊夫尼，声称自己从“水域十字路”前来投奔教团。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "ironbook",
+      "reading": {
+        "intro": "教团成员必须许下名为“铁之锁链”的誓言，保证永远避世。这本指南书记有据推测早已废弃的地址和暗语，大概原为联络伊里亚镇上的教团联系人所用。",
+        "content": "指南的最后部分描述了怎样处罚违背了隐世誓言的教团成员。其中包括一个用来召唤名为“坩埚王”的灵体，并令其代己复仇的祷文。伊芙妮提醒说这很可能是对付违背誓言之人的最后手段，仅当其他手段无法施展时才会使用：召唤坩埚王甚至可能引来白日铸炉本人的注意。",
+        "effects": {
+          "ironbook": -1,
+          "fragmentforged": 1
+        }
+      }
+    },
+    {
+      "id": "silverbook",
+      "name": "《银之书》",
+      "description": "利米亚教团的指南书。该教团由类不死者组成，占据了罗马行省西斯班尼亚·加拉埃西亚，利米亚河源头一块隐秘的飞地。本指南的编者署名布兹加什，声称自己放弃了侍奉骨白鸽，从“信雕之城”前来投奔教团。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "silverbook",
+      "reading": {
+        "intro": "教团成员必须许下名为“银之锁链”的誓言，保证男性成员不与女性，女性成员不与男性交媾：“因为将降临的虽并不必然是天孽，但仍是严重的危险。”看样子，男性与男性、女性与女性间的交媾是允许的——实际上，布兹格哈什建议对此予以鼓励，以助人远离其他诱惑。",
+        "content": "指南书规定了几种针对受到诱惑，可能违背誓言的成员的预防措施：戴面具、毁容、听严厉的，诗歌般的训诫。已违背誓言者会被处死，而进行了某些行为却没实际性交者则会被处以较轻的处罚。指南中给出了一个用来将此类处罚和召唤仪式结合在一起的祷文。",
+        "effects": {
+          "silverbook": -1,
+          "fragmentknockd": 1
+        }
+      }
+    },
+    {
+      "id": "ivorybook",
+      "name": "《白骨之书》",
+      "description": "利米亚教团的指南书。该教团由类不死者组成，占据了罗马行省西斯班尼亚·加拉埃西亚，利米亚河源头一块隐秘的飞地。本指南的编者署名红，声称自己逃离了“菊花朝廷的暴政”，漂洋过海前来投奔教团。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "ivorybook",
+      "reading": {
+        "intro": "教团成员必须许下名为“白骨锁链”的誓言，保证不与司辰做交易。对一名学徒来说，要一字一句遵守这个誓言几乎是不可能的，因此指南书中收录了不计其数的解释、例外和赦罪办法。",
+        "content": "作者红描述了教团的葬礼仪式，其中包括能够——理论上——确保不将逝去长生者的灵魂交给司辰的咒语。此类仪式会隐秘地向回忆与纪念之神——名为骨白鸽的司辰致以祈求，“因我们与那位司辰达成了共识。”",
+        "effects": {
+          "ivorybook": -1,
+          "fragmentwinterd": 1,
+          "ritefollowerconsumeinfluence": 1
+        }
+      }
+    },
+    {
+      "id": "worlddoesnotweep",
+      "name": "《世界从不落泪》",
+      "description": "“棕色”约书亚在哈马城中的一口井里找到了本书。有不可信的传说称本书为亚历山大从伊苏斯撤退时所弃。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "worlddoesnotweep",
+      "reading": {
+        "intro": "一名不知名的学徒写下下述宣言：世界会遗忘，但骨白鸽不会。为保证某些做法能被人铭记，书中列出了一连串旧习做法，包括一种需要以特别骇人听闻的方式献祭的仪式……",
+        "content": "众司辰企图埋葬有关转轮、燧石、浪潮及七蟠之遭遇的回忆，但白鸽不容许这样做。他也不容许最初之卵的遭遇为人遗忘，尽管这或许是守夜人唯一能恕之事……",
+        "effects": {
+          "worlddoesnotweep": -1,
+          "fragmentwinterd": 1,
+          "riteinfluenceconsumefollower": 1
+        }
+      }
+    },
+    {
+      "id": "deedsofthescarredcaptain",
+      "name": "《伤疤上尉事迹录》",
+      "description": "由靠做雇佣兵，也有时靠家里汇钱过活的帕维尔·舒加在希腊生活时煞费苦心地收集成书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "deedsofthescarredcaptain",
+      "reading": {
+        "intro": "身负伤疤的上尉斩杀七怪，平定地面后建立迈锡尼的经过。",
+        "content": "上尉每消灭一怪，血的洪潮就升得更高，直至最后使一名女祭司溺死其中并重生为蛇神。她祝福上尉，上尉则在血潮退却后离开迈锡尼，去向“林地之上的居屋”，成为至高的主宰。",
+        "effects": {
+          "deedsofthescarredcaptain": -1,
+          "fragmentedged": 1
+        }
+      }
+    },
+    {
+      "id": "bookofdissolution",
+      "name": "《融解之书》",
+      "description": "亚历山大·普罗布斯特承袭杰·维苟财·詹森的基础性工作，修复了本书存于波斯某山中寺庙的一份抄本。本书在别处也时有发现，通常是烙刻在石头上。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bookofdissolution",
+      "reading": {
+        "intro": "这本书主要记载了向不焚之神，消耗与重造之神，即白日铸炉的祈祷。该书认为铸炉之力部分源于其性质，部分源于其工具。",
+        "content": "书中描写了早期的，有着和现在不尽相同的门扉与通路的太阳之居屋。它颂扬了白日铸炉开启通往居屋道路的事迹，赞美了她将过往转化为现今的作为，尽管这伴随着石头的惨叫……",
+        "effects": {
+          "bookofdissolution": -1,
+          "fragmentforgee": 1,
+          "ritetoolconsumefollower": 1
+        }
+      }
+    },
+    {
+      "id": "catalogueofunchartedpleasures",
+      "name": "《未知快感概览》",
+      "description": "“黑暗绅士”是这本抄本众多的书唯一被认出的，且认出时相当大张旗鼓的作者。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "catalogueofunchartedpleasures",
+      "reading": {
+        "intro": "“有些快感，”有销魂法术为证，“如此强烈，足以瓦解现实世界的规律”。这篇文献列出了一些例证。",
+        "content": "分娩发生于欢愉与苦痛结合之时。因而铸炉的第一条禁忌行径诞下欢欣的火花，于辉光或虚界生根发芽：谁又能肯定在哪呢？因而制花人的种子埋下，尽管在很长的年月里他只是一处无法满足的期盼。",
+        "effects": {
+          "catalogueofunchartedpleasures": -1,
+          "fragmentgraile": 1
+        }
+      }
+    },
+    {
+      "id": "thosewhodonotsleep",
+      "name": "《不眠者》",
+      "description": "神秘主义者布罗德纳克斯在本书中讨论了双生女巫和轰雷之皮的起源。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "thosewhodonotsleep",
+      "reading": {
+        "intro": "“双生女巫分别降生自海洋两岸的两个子宫，一个贫穷，一个富有。巫女强于<b>心</b>相，以保她二者存活于世；女巫强于<b>杯</b>相，故而她二者欲壑难填……”",
+        "content": "“双生女巫自西而来时，赤杯允许她们飞升，随后却对她们的力量产生了妒忌。于是赤杯引诱来一位伟大的乐手，将他作为具名者纳入麾下，使他从血中重生为心之司辰，借此让自己在心之领域也掌握权柄。但赤杯并非常胜不败。”",
+        "effects": {
+          "thosewhodonotsleep": -1,
+          "fragmenthearte": 1,
+          "ritetoolconsumeingredient": 1
+        }
+      }
+    },
+    {
+      "id": "theskythesoul",
+      "name": "《魂归苍穹》",
+      "description": "凯勒的鸿篇巨制，一首写于无影众王宫廷的禁欲主义诗歌。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "theskythesoul",
+      "reading": {
+        "intro": "凯勒的诗简短、晦涩，通常还充斥着暴力意象。“星星是针戳的小洞，太阳却是创口。”",
+        "content": "“人总是可以再多死一分的，”凯勒说。“之前守夜人去了；其后或有且只有七位能去。”“然而我等生来注定追求辉光，一如火花向上飞舞。”",
+        "effects": {
+          "theskythesoul": -1,
+          "fragmentlanterne": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "onthematterandthedeedsofserpents",
+      "name": "《蛇族事迹考察》",
+      "description": "本书大概是翻成英语的“那迦大蛇的预言”，其插图由“威廉·米德奈特”在1880年代绘制于巴黎；但本书与该预言又显出多处不同。以伐诃语文献的标准来看，本书的年代显然是很近的。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "onthematterandthedeedsofserpents",
+      "reading": {
+        "intro": "名为“兜颈贵胄”的蛇人一族了解到了“遗忘家族”教团的存在，并与之展开了跨越千里的战争。它们与蚁母结盟，因“它们原是她的子女”……",
+        "content": "文中描述了兜颈贵胄如何从第五史逃离（或将要逃离），而第五史也是它们死去（或注定要死去）的地方。兜颈贵胄参与到一场针对“大河流域”的秘密征服中——该流域在某些历史中叫做印度——确保了除己之外对此地的征服均无理可依。",
+        "effects": {
+          "onthematterandthedeedsofserpents": -1,
+          "fragmentknocke": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "serenityofblackwood",
+      "name": "《黑林地的静谧》",
+      "description": "关于“遗忘家族”的寓言式史书，书中暗示该组织受蜈蚣的启发。时至如今，“塞雷诺·布莱克伍德”一直是对密教的别称。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "serenityofblackwood",
+      "reading": {
+        "intro": "“众所周知的行踪自在之人”将一座林中的旅行者聚集起来，带领他们穿行其中，却在途中将他们抛弃。他们则发觉自己陷入了“光辉怪物”的围攻。",
+        "content": "旅行者们发现闭上双眼便能活命（他们选紧闭的眼作他们的标记），且饮用清澈冰冷的溪水便能悄悄离开。他们从未忘记“众所周知的行踪自在之人，又称蜈蚣”，但他们也从未原谅她。",
+        "effects": {
+          "serenityofblackwood": -1,
+          "fragmentmothe": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "bookofthrones",
+      "name": "《王座之书》",
+      "description": "一本无影帝国的传奇故事，由亚历山大·彼得汉斯誊自安纳托利亚一个隐秘神庙的年鉴。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bookofthrones",
+      "reading": {
+        "intro": "在“第一重亦最伟大的历史”中，一名波斯无影帝国的臣民向西而行，去往珀耳修斯后裔王国。他在那里拜入珀耳修斯后裔守护神，“居于黑暗的伤疤人”门下。七年后他学成归来，用其所学为无影帝国效力，成为了帝国的黄金将军……",
+        "content": "多年的和平过后，珀耳修斯后裔王国的继承者开始进击无影帝国与众王之王。黄金将军本不愿与自己导师的血亲操戈相向，直到众王之王向他耳语一个“关于背叛的巨大秘密”。他折断佩剑，将自己与帝国与伤疤人的誓约一并舍弃，然后抛下之前的人生，进入了“隐于世后的庙宇”。",
+        "effects": {
+          "bookofthrones": -1,
+          "fragmentsecrethistoriese": 1,
+          "fragmentedgee": 1
+        }
+      }
+    },
+    {
+      "id": "secondglory",
+      "name": "《第二辉光》",
+      "description": "祭司尤赛在本书中对先于人类的司辰，石源诸神的灭绝大加庆贺。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "secondglory",
+      "reading": {
+        "intro": "尤赛为毁灭司辰之事进行辩解：他们老了、他们懦弱、他们卑劣、他们的时代已经过去，而通过辉煌的战斗夺取居屋正是人类耀眼的天命。",
+        "content": "尤赛诉说了名为七蟠的司辰如何在战斗中被上校斩杀，名为浪潮的司辰如何遭圣杯吞噬，以及逆孵之卵如何“像懦夫一样逃走”。他对逆孵之卵肆言詈辱，并悲观地警告说它将回归。",
+        "effects": {
+          "secondglory": -1,
+          "fragmentwintere": 1,
+          "dread": 1,
+          "riteinfluenceconsumefollower": 1
+        }
+      }
+    },
+    {
+      "id": "bookoftrueblood",
+      "name": "《真血之书》",
+      "description": "圣多默派教徒卡西乌斯在本书中揭示了无尽军团——一支保卫罗马，抵抗无影帝国的秘密军队——的事迹。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bookoftrueblood",
+      "reading": {
+        "intro": "军团使节直接受命于名为伤疤护民官的司辰，并得到若亡于战斗则获不死之身的允诺……",
+        "content": "在书的最后，卡西乌斯承认了自己的前使节身份。他叙述了自己对护民官的惊惧之情，并吐露了有关黄金将军，即无影帝国的捍卫者，护民官之敌的秘密传承，希冀护民官终有一日会被扳倒。",
+        "effects": {
+          "bookoftrueblood": -1,
+          "fragmentedgee": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "burningwoman",
+      "name": "《燃烧的女人》",
+      "description": "一部译为弗里吉亚语的戏剧抄本，带评注，署名为“胜利者”米南德，此人可能是这个剧本的剧作家。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "burningwoman",
+      "reading": {
+        "intro": "这部戏剧描述了铁匠和学徒们追寻燃烧的女人足迹的巡礼之旅；此女出现在他们的梦中，给予每人一处伤口、一个言辞。",
+        "content": "铁匠和学徒们放弃了找寻燃烧的女人，决心建立自己的王国，“在此处，我们的力量足以粉碎世界。”",
+        "effects": {
+          "burningwoman": -1,
+          "fragmentforgee": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "twentysixenticementsseventorments",
+      "name": "《二十六种诱惑与七类苦痛》",
+      "description": "画家尼尔斯·弗雷德里克·马斯凯尔曾做过一件臭名昭著之事：试图以这些苦痛为题作画。画到第五类苦痛时，画作的欲求增长得过于急切，使得他因失血而死。所幸书中的图解没有那么详细。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "twentysixenticementsseventorments",
+      "reading": {
+        "intro": "“聖杯的誘惑之數多於其苦痛，但苦痛才是它的真本性。生誕是第一苦痛，而干渴是第七苦痛。”",
+        "content": "要列举杯的诱惑与苦痛，离不开“干涸之地两女巫”哀伤的历史：降生于两个子宫的煎熬，摆脱杯的挣扎与对杯的乞求，对结合为一的共同渴盼。",
+        "effects": {
+          "twentysixenticementsseventorments": -1,
+          "fragmentgraile": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "historyofshadowlesskings",
+      "name": "《真实准确的无影众王史》",
+      "description": "《真实准确的无影众王史，卡斯的艾萨克著》。艾萨克在本书中描写了无影帝国持续千年的霸权。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "historyofshadowlesskings",
+      "reading": {
+        "intro": "本书描述了“第一重亦最伟大的历史”。波斯帝国——又称“阿契美尼斯的子嗣”、“无影众王”、“最辉煌帝国”——挺过了亚历山大大帝的强攻，繁荣昌盛直至第五世纪。",
+        "content": "罗马陷落后，无影帝国将拜占庭置于自己的荫蔽下，并东进攻取大河流域。作者艾萨克的叙述以对抗“由扁颈蛇组成的无肤之师”的侵略战争开始，却又唐突地以一系列他称能令无影帝国存续的祷文收尾。",
+        "effects": {
+          "historyofshadowlesskings": -1,
+          "fragmentsecrethistoriese": 1,
+          "fragmenthearte": 1
+        }
+      }
+    },
+    {
+      "id": "highmysterieschurchsolar",
+      "name": "《吾太阳神教核心厅室之极密》",
+      "description": "《吾太阳神教核心厅室之极密》。本书记载了无敌太阳教会的秘密仪式，该教至少在两重历史上掌握过权势。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "highmysterieschurchsolar",
+      "reading": {
+        "intro": "该教派崇拜的主要对象是骄阳，即原初的，未分裂的太阳；但本书也记载了如何祀奉骄阳的其他面相：祀奉冷冽的冬季黎明、消逝的夕阳、还有弧月，即太阳的“夜间自我”。该教派的祭司均为男性，但书中也记载了令女人转性而具备男人特质的仪式。",
+        "content": "该教派将最重要的仪式放在聚点举行；聚点是位于漫宿核心的厅室，已知的司辰行经之处。此类仪式包含致敬与太阳无关的司辰——圣杯、环杉、双角利斧、轰雷之皮——的环节。",
+        "effects": {
+          "highmysterieschurchsolar": -1,
+          "fragmentlanterne": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "medusaslament",
+      "name": "《美杜莎的哀叹》",
+      "description": "描写了名为七蟠的司辰，又称“母亲之父”的死亡。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "medusaslament",
+      "reading": {
+        "intro": "诗的第一部分描述了七蟠遭遇一名战士的伏击，此人“全身上下都是那些背信弃义的神留下的伤疤，连双目上都是，所以他不会因目睹虬结的蟠身而毁灭。”",
+        "content": "激战一直持续至七蟠溺毙在自己的鲜血中，诗风由此转向神秘而委婉。拥有七项头衔的女神从七蟠的血沫中升起：她是披坚执锐的女王，是蛇的女儿，是钥匙，是治疗者，是杀人者，是神谕祭司，但她的第七头衔隐而不宣。",
+        "effects": {
+          "medusaslament": -1,
+          "fragmentknocke": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "bookofmasks",
+      "name": "《面具之书》",
+      "description": "雅典娜·凡娜对被名为浪游旅人的流浪司辰的研究手记；此司辰还有“笑鸫”、“蜈蚣”、“巡礼者”等许多别称——或依凡纳的说法，“面具”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bookofmasks",
+      "reading": {
+        "intro": "笑鸫的面具，据雅典娜·凡纳说，与漫宿的至尊之司辰骄阳（如今已分裂消逝）交情甚笃。景象窃贼的面具在漫宿画下河流。浪游旅人的面具在漫宿是为禁忌，原因不是她已做过的事，而是她会引发的事……",
+        "content": "蜈蚣的面具代表了她的生身地——弥阿城，曾因她爬进神殿域而对她降下刑罚。这副面具诅咒弥阿只能饮啜沙尘，在风中消逝无闻——“她并不因隐于面具之后而饶恕仇敌，蜈蚣的饥渴总有一天要得到满足。”",
+        "effects": {
+          "bookofmasks": -1,
+          "fragmentmothe": 1
+        }
+      }
+    },
+    {
+      "id": "inthemountainsasupontheplain",
+      "name": "《山中亦如平川…》",
+      "description": "《山中亦如平川，许无前人未达之途》。拉格什的宁娜伽勒在本书中描述了山中有待发现的秘密。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "inthemountainsasupontheplain",
+      "reading": {
+        "intro": "作者宁娜伽勒在书中讲述了几个热闹的故事，有关于说谜语的食人魔的，也有关于山中部落间的战争的，但在讲述空手猎人传说时，故事基调转向忧郁：圣杯有一位情人，他想要符合她的胃口，成为与她并肩的司辰，最终却撕开并吞吃了自身，将名字留给了他曾漫游过的山脉。",
+        "content": "宁娜伽勒称那些有时以鸟型显现的司辰——笑鸫、骨白鸽、拾滩鸦和双生巫女——会在山顶的秘密地点会面，交换同僚没听过的闲话。时不时会有凡人不巧听见他们。这样的人总会被抹消，会面的地点也总在变化。",
+        "effects": {
+          "inthemountainsasupontheplain": -1,
+          "fragmentsecrethistoriese": 1,
+          "fragmentmothe": 1
+        }
+      }
+    },
+    {
+      "id": "memoryofgods",
+      "name": "《缅怀诸神》",
+      "description": "作者是一个无名的高卢人学徒“坟茔之子”，属于名为利米亚教团的组织。此人带着遗憾之情讲述了先于人类的司辰——石源诸神的毁灭。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "memoryofgods",
+      "reading": {
+        "intro": "坟茔之子在书中着重点名谴责了伤疤护民官、赤杯、铸炉和飞蛾，因他们谋杀了最初的诸神。“我们活在他们罪行的阴影下，”她写到，“我们若不留心避免，必将重蹈覆辙。”",
+        "content": "坟茔之子描述了赤杯如何饮干名为浪潮的司辰，飞蛾如何“从内部篡夺转轮”，盗走了它的皮肤，以及铸炉如何先盖过燧石的光芒而后粉碎之。“也许这些行为可说是光辉的，”她评论到，“然而辉光不可说是仁慈的。”",
+        "effects": {
+          "memoryofgods": -1,
+          "fragmentwintere": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "sevenfoldslayingsevencoiled",
+      "name": "《七步斩七蟠》",
+      "description": "记录了远古司辰——一位石源神的毁灭。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "sevenfoldslayingsevencoiled",
+      "reading": {
+        "intro": "共十二节。在第一节，一位飞生而来，称为伤疤者的司辰为他消灭七蟠而辩解，列举了种种理由：七蟠的口腹之欲，它的不断成长，它对人类的敌意。在第二节，一名女祭司熄灭了他的眼，并在他皮肤上刻下伤疤，以此保护他免受七蟠魔法的伤害。在接下来的七节，他每一节消灭七蟠的一个面相……",
+        "content": "在第十节，伤疤者将七蟠的鲜血洒遍庇护他的女祭司全身，以此借给她神力。在第十一节，他们向“隐于世后的庙宇”发动袭击，强行进入其内。在第十二节，他们许下三重誓言，将其先祖、其后裔、其自身保护起来。",
+        "effects": {
+          "sevenfoldslayingsevencoiled": -1,
+          "fragmentedgef": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "bighuff",
+      "name": "《我的事迹、我的力量、我的成就……》",
+      "description": "《我的事迹、我的力量、我的成就和我所面临的不公》。波辛德的霍科博尔德——被有些人称为“遗忘家族”的不死者教团的前成员——在本书中反击了该教团。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bighuff",
+      "reading": {
+        "intro": "霍科博尔德吹嘘自己的皇室血统，并坚称铸炉的魔法在由血统高贵之人施行时更有效。",
+        "content": "波辛德埋怨利米亚教团给他定罪。他承认在“达成那种特定的愉悦”后，他“有所改变”，但他坚称此类改变既是高雅，也是必然的。“究竟谁是火，谁是燃料？”他诘问道。",
+        "effects": {
+          "bighuff": -1,
+          "fragmentforgef": 1
+        }
+      }
+    },
+    {
+      "id": "dreamconspiracyskies",
+      "name": "《降天祛孽之梦》",
+      "description": "由名声扫地的神谕者达马翁·阿谮那滕筛选收集而成，素材源自戈尔迪翁的佩涅罗佩所写的天方夜谭，宫廷诗人凯勒的作品，还有学徒阿雷特雷兹著作中遭禁的片段。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "dreamconspiracyskies",
+      "reading": {
+        "intro": "达马翁坚称司辰也屈从于自己的激情——屈从于憎恨，甚至爱，其程度远超凡人。“年景的好坏，地球的转动，熔炉的转变——所有这些仅仅只是司辰的激情中较弱的那些成就的结果。”",
+        "content": "达马翁认为众司辰已然收敛对立，以免在太阳的居屋引发战争。他发觉司辰不去追求其他激情的原因是“惧怕天孽”。他推断司辰存在吸血阿卢卡化的可怕可能性。“那样的话他们会吞噬什么呢？”",
+        "effects": {
+          "dreamconspiracyskies": -1,
+          "fragmentgrailf": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "bookwhitecat",
+      "name": "《白猫之书》",
+      "description": "由一只瞎眼白猫传递给戈尔迪翁的佩涅罗佩的故事。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bookwhitecat",
+      "reading": {
+        "intro": "已知鸟型司辰——乌鸦、笑鸫、白鸽、还有孪鸢——会在戈尔迪翁北部的山中一个叫做栖木的地方见面，互聊闲话。佩涅罗佩称直接听到他们话语的凡人会被抹消掉，但她的猫不被神查知地回到她身边，告诉了她从司辰集会听来的传闻。",
+        "content": "佩内洛普所述的司辰间的闲话既零碎又混乱：有以希望、恐惧与无影帝国为棋子相互竞夺的经过，有来自不为人知的历史的关于残迹与铭记的纲领。最有趣的是她担心众司辰会发现她打探神机，所以在书的结尾收录了保护祷文。",
+        "effects": {
+          "bookwhitecat": -1,
+          "fragmentheartf": 1
+        }
+      }
+    },
+    {
+      "id": "focusamber",
+      "name": "《琥珀之光》",
+      "description": "奥马尔，又名“炽焰”，为了清偿自己熄灭圣焰的罪过，在推罗看了七年灯塔。而在这场苦役最后，他对火焰产生了莫大的恐惧，甚至无法与烛焰共处一室。写这本书是他苦修的一部分。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "focusamber",
+      "reading": {
+        "intro": "奥马尔声称名为守夜人的司辰既是肉源神——原为凡人的司辰——也是光源神——降自辉光的司辰——但在最后又补充说，守夜人有三重来源，即是说“实质上，他是琥珀神”。",
+        "content": "守夜人，据奥马尔称，原先完全是另外一位司辰，因其他司辰欲将其赶进虚界而逃入辉光，升入其间。奥马尔讲到这点时可能渗入了他自己的偏见：可想而知，此处的行文变得不那么连贯。书的最后一部分致力于证明眼瞳，卵和太阳在某种意义上是一体的。",
+        "effects": {
+          "focusamber": -1,
+          "fragmentlanternf": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "songscarapacecross",
+      "name": "《介壳种之歌》",
+      "description": "米卡·席，有时也称“石英术士”，用酸液将本作蚀刻在了石头上。本作后被多次复制，不过复制品往往散佚于山体滑坡。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "songscarapacecross",
+      "reading": {
+        "intro": "作者席描述了人类文明存在之前，“介壳种”所施行的最初的司辰——石源诸神的仪式。他称这些信息是最后一名存活的介壳种告诉他的。",
+        "content": "这些仪式现已大半遭到淘汰。至少在过去的一千年里，其中绝大多数都没显出任何作用。不过，席确认了至少一个拥有某种法力的祷文。他警告说此祷文须得谨慎使用，以免石源神找到从虚界返回的道路。",
+        "effects": {
+          "songscarapacecross": -1,
+          "fragmentknockf": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "originsofhours",
+      "name": "《司辰的起源》",
+      "description": "漫宿的常客，睿智而又痴狂的索哈姆宣称自己与拾滩鸦当面对谈过。索哈姆随后坚决要求自己死后执行天葬。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "originsofhours",
+      "reading": {
+        "intro": "索哈姆的文字由抒情转为自白。他将神分为肉源（原为凡人）、血源（经献祭升为）、光源（从辉光而来）和石源（早于他所知）的。他强调飞蛾为首位血源神，后却又自相矛盾地称赤杯才是首位。",
+        "content": "“第一位神明自光中到来时，漫宿并非现在的模样，但无需怀疑彼时它既已存在。”",
+        "effects": {
+          "originsofhours": -1,
+          "fragmentmothf": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "wherehasshegone",
+      "name": "《她去到过何地？》",
+      "description": "“斯佩斯”——或许是某个学徒，或许是某个学者结社——根据有限的证据推测出了一些秘密事件，其准确度颇为可信。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "wherehasshegone",
+      "reading": {
+        "intro": "据记载，浪游旅人不仅旅经漫宿和林地，游遍全部九个大陆，还去过那些禁止其他司辰踏足的地方……",
+        "content": "通过司辰间的闲话和无形的密传，斯佩斯推断浪游旅人造访过虚界，但不会再去。他还宣称她尚未造访过辉光，但或早或晚，她必然会去。",
+        "effects": {
+          "wherehasshegone": -1,
+          "fragmentsecrethistoriesf": 1
+        }
+      }
+    },
+    {
+      "id": "bookextinguishedheart",
+      "name": "《寂灭之心》",
+      "description": "在无影众王时代，恩尼斯·拉扎里因预言太阳的分裂而被处以极刑。若抓捕他的人日后长成了长生者，现在大概会感到惭愧。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "bookextinguishedheart",
+      "reading": {
+        "intro": "拉扎里称太阳将在锤炼场被白日铸炉分裂，后者的凶器是心中的爱。",
+        "content": "“导致太阳之死的不会是爱，而是妒忌。导致太阳之死的不会是妒忌，而是渴求。导致太阳之死必不是渴求，而是好奇。置他于死地的必不是好奇，终究还是爱。”",
+        "effects": {
+          "bookextinguishedheart": -1,
+          "fragmentwinterf": 1,
+          "dread": 1,
+          "riteconsumetoolingredientfollowerinfluence": 1
+        }
+      }
+    },
+    {
+      "id": "howendwillbegin",
+      "name": "《终结如何开始》",
+      "description": "关于路权战争的预言，记录于兜颈贵胄还未出现时的次大陆。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "howendwillbegin",
+      "reading": {
+        "intro": "在预言所述的战争中，受控之火的子女向大陆上的城邦进军，但“太阳法的制定者”和“三倍姐妹会”联合起来击退了他们……在付出巨大代价后。",
+        "content": "“在不灭军团与受控之火的战斗中，军团将灭亡而火将解除控制。”",
+        "effects": {
+          "howendwillbegin": -1,
+          "fragmentedgeg": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "manneralchemistspared",
+      "name": "《炼金术师保命之法》",
+      "description": "1782年，阿纳尔·维迪尔以本书为据在巴黎科学院进行了宣讲。他于次日清晨被不经审判直接处决。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "manneralchemistspared",
+      "reading": {
+        "intro": "在介壳种时代，人类生活在黑暗里，跪着吃东西；那时的人类可以像寄生虫一样进入漫宿。有一人学会了燧石的技法，即塑形与再造的技法……",
+        "content": "“经过黑，黄，红，这名愚蠢的凡人升入逆孵之卵的阴影，并加入侍奉他的行列。他或许时至今日仍在那里。”",
+        "effects": {
+          "manneralchemistspared": -1,
+          "fragmentforgeg": 1,
+          "fascination": 1
+        }
+      }
+    },
+    {
+      "id": "fivecreations",
+      "name": "《五大创造论》",
+      "description": "游学者肖黑在本书中讨论了五种人类可能的起源，并佐以一个蒙面的，他称之为“拾滩鸦”的形象。肖黑之后又称这些描述已全部被证伪，但无论如何，讨论本身还是被记录了下来。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "fivecreations",
+      "reading": {
+        "intro": "“<b>介壳源</b>：我们诞自甲壳，如同黄蜂的孩子从蜘蛛体内钻出。<b>辉源</b>：我们生命的微粒降自“光”。<b>受污之源</b>：我们出世时浑身赤裸，身上沾着林地根部的淤泥……”",
+        "content": "肖黑偏爱的理论是：我们是直立行走的猿猴的子孙，尽管他说及此论时语带讥讽；又或者我们不仅摄食了我们的父母，“此行并非天孽”，也摄食了我们的起源，所以我们来自虚界。",
+        "effects": {
+          "fivecreations": -1,
+          "fragmentgrailg": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "commandspreservationallexists",
+      "name": "《关于维持一切事物存续的教令》",
+      "description": "大马士革绳结姐妹会的头领“黑色”艾丽遭到了皇帝狄第乌斯·尤利安努斯囚禁。据记载，她曾命人将这些秘密教义记录成书，以保其免于遗失，永远存续。遗憾的是，据传说狄第乌斯·尤利安努斯命人将本作随她葬入了一个没有标记的墓室。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "commandspreservationallexists",
+      "reading": {
+        "intro": "艾丽在本书中描述了能用于各种情况的强大保护咒。",
+        "content": "“重要的是，这些保护咒需每四年补修一次，以抵御蠕虫进入以及‘水波’和‘创口’的热盼。”至少在现今这重历史中，过去至少一千年内没有迹象表明有人定期施放过这些保护咒。",
+        "effects": {
+          "commandspreservationallexists": -1,
+          "fragmentheartg": 1
+        }
+      }
+    },
+    {
+      "id": "timedivision",
+      "name": "《分裂之时》",
+      "description": "阿米拉·扎拉在本书中预言了后人称为“置闰”的事件：名为骄阳的司辰被分裂。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "timedivision",
+      "reading": {
+        "intro": "太阳将遭分裂，故它许不能再生产子嗣。即便如此，其子嗣之数应为四再其子嗣之数应为七再其子嗣之数更应不可计数。不可计数者将为七者打开道路，七者将摄食四者……",
+        "content": "阿米拉预卜了“第二拂晓”前，即骄阳再度升起前的四场大战。她提醒道：“日出为血，我于此预言骄阳将从血中升起，却既无鲜血的颜色，亦非夜晚的时辰。”她给出了她推测第二拂晓所需的一个仪式。",
+        "effects": {
+          "timedivision": -1,
+          "fragmentlanterng": 1,
+          "fascination": 1,
+          "dread": 1,
+          "riteconsumetoolingredientfollowerinfluence": 1
+        }
+      }
+    },
+    {
+      "id": "manualdeparture",
+      "name": "《脱身手册》",
+      "description": "作者自称杰卡杜，为圣河流域的兜颈贵胄之一。文风并不正式，甚至可说像闲聊。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "manualdeparture",
+      "reading": {
+        "intro": "不，不应该记录这些门，但如果那时，我们在被迫离开第五史前做了记录，我们现在的景况会好得多。所以我现在将其付诸笔端，如果你不喜欢，你可以制裁我。",
+        "content": "《脱身手册》列举了若干——密教上，军事上和政治上的——快速脱逃策略。其中许多是可有可无，过时落后或高深难懂的，但这本手册的确给出了若干强力的开启门洞的技术。",
+        "effects": {
+          "manualdeparture": -1,
+          "fragmentknockg": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "birdsong",
+      "name": "《伊纳姆、卡皮吉吉努皮尔、加尔基、克雷皮斯》",
+      "description": "书中的四个神秘人物讲述了他们多年来在“栖木”——鸟型司辰的集会地——听到的故事。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "birdsong",
+      "reading": {
+        "intro": "<b>伊纳姆</b>：拾滩鸦没有分享他的宝藏吗？<b>加尔基</b>：没有分享最稀有的。他把最珍贵的留给自己了，号称那些是他找到的，不是偷来的。",
+        "content": "卡皮吉吉努皮尔认为拾滩鸦不仅是盗贼，同时也是探子，甚至喜欢窥淫。他把司辰和祂们的具名者间秘密交合的记忆藏在居屋的角落，作为暗中夸耀的宝藏。还有一个很火的猜测：热情如火的林地司辰环杉，和有时与女巫做姐妹的树中牝马，这两者间有私情。",
+        "effects": {
+          "birdsong": -1,
+          "fragmentmothg": 1,
+          "fascination": 1,
+          "dread": 1
+        }
+      }
+    },
+    {
+      "id": "voyagesfo",
+      "name": "《奥莱尔的斐宁舜之远航记》",
+      "description": "一本类似游记的书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "voyagesfo",
+      "reading": {
+        "intro": "斐宁舜显然在沿画中之河航行时拜访过漫宿。他还称他横渡过沙滩最细腻的海域，挑战过太阳表面的热浪，也曾下潜到由墨玉照亮的地底之海……",
+        "content": "在最后一次远航中，斐宁舜跨越了薄暮的海面，到一座平静的岛屿上安度余生。他认为那里有一眼能保证他的安全的泉水。“人们会忘记我，”他宣告说，“而这本书是我留下的唯一痕迹。”",
+        "effects": {
+          "voyagesfo": -1,
+          "fragmentsecrethistoriesg": 1
+        }
+      }
+    },
+    {
+      "id": "scarsky",
+      "name": "《天宇的伤疤》",
+      "description": "作者宁在写下本书后追悔不迭。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "scarsky",
+      "reading": {
+        "intro": "这本书每一页只写有一个词，但每翻过一页，便有一个知识潜入脑中。",
+        "content": "最后一页写得满满当当。书的每个读者都会在此处记下同一个词。现在轮到我了。",
+        "effects": {
+          "scarsky": -1,
+          "fragmentwinterg": 1,
+          "dread": 1,
+          "riteconsumetoolingredientfollowerinfluence": 1
+        }
+      }
+    },
+    {
+      "id": "kitlingripe",
+      "name": "《老成仔猫与鼹鼠的坟墓（及其他故事）》",
+      "description": "一本插图华美的大书，内含数篇关联松散的儿童故事，由署名N·K·菲尔德之人收集成册。里面没有几个故事适合儿童阅读。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "kitlingripe",
+      "reading": {
+        "intro": "本书主角，一只名为老成仔猫的无言猫形生物施行了一系列复杂的仪式来拯救她族中的亲属。在故事最后一幕，她复活了她的“另一位祖母”——鼹鼠。",
+        "content": "“蛇女巫杀死牡鹿时，仔猫抠出了它一只眼睛。干涸女巫杀死牝猪时，仔猫偷去了它一杯血液。随后她带着这些东西到埋葬鼹鼠的地方，散开自己的头发，开始舞蹈……”",
+        "effects": {
+          "kitlingripe": -1,
+          "fragmentmothb": 1,
+          "glimmering": 1
+        }
+      }
+    },
+    {
+      "id": "raptintheking",
+      "name": "《为王着迷》",
+      "description": "詹姆斯·科林·墨菲在本书中详细记录了他在南欧、埃及和安纳托利亚的坟场与墓地中看到的秘密欢宴和迷醉之舞。作者其人坦白了自己是食尸鬼，啃食土中尸体的生物：他称他在大快朵颐时见到了书中的舞蹈。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "raptintheking",
+      "reading": {
+        "intro": "这套舞蹈源自祭奉女神伊西斯与库柏勒的密教所传承的奥秘，不仅含有象征和实际意义上的剥皮行为，而且永远以人类心脏为仪式的主轴。作者着重圈点了他对自己被打断的宴席的令人作呕的感官描写。",
+        "content": "“在那些盛大宴席間，總有一頭黑豬在經受屠宰前被加冕為王。每逢此時，它的心髒會經天平與一片羽毛互較輕重，而它的皮會成為主祭的披風。它的血肉被留給烏鴉，但我必須坦白我意不在其屍骸，而在於女帽制造者新入土的噴了香水的肉體。”",
+        "effects": {
+          "raptintheking": -1,
+          "fragmentheartc": 1,
+          "vitality": 1
+        }
+      }
+    },
+    {
+      "id": "vienneseconundra",
+      "name": "《维也纳未解之谜》",
+      "description": "妮可·梵·德里尔描述了维也纳发生的怪事——儿童消失、寄生虫大肆传染、动物被切掉肢体、关于蠕虫的噩梦、一个为穷人提供丧葬费，名为“新生丽姬亚”的慈善组织。她指出了这些现象间怪异的联系。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "vienneseconundra",
+      "reading": {
+        "intro": "“K氏参加会议时，黑犬们被献祭并分为四块。M氏出席时，黑牝马们遭到割喉。我的意见是这些献祭是不必要的，但我们的丽姬亚朋友或许认为它们是‘恰当的’。下图是肢解的示意图——”",
+        "content": "“那就说美杜莎的谜语吧，我选择译成‘何物不得见？’还有一道谜语，我听到的译文是‘何物会失去？’要回答此问，我会复述一些历史上著名上的作答——这些作答本身，某种意义上也是，祭品——”",
+        "effects": {
+          "vienneseconundra": -1,
+          "fragmentmothc": 1,
+          "glimmering": 1
+        }
+      }
+    },
+    {
+      "id": "textbooklatin",
+      "name": "《吉尔德斯利夫的拉丁语语法》",
+      "description": "最适于用来复习拉丁语知识。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "textbooklatin",
+      "reading": {
+        "intro": "我能回想起不少学生时代的所学，不过我需要复习。",
+        "content": "开启记忆宫殿之门。",
+        "effects": {
+          "textbooklatin": -1,
+          "scholarlatin": 1
+        }
+      }
+    },
+    {
+      "id": "textbookfucine",
+      "name": "《亚历山德罗·拉克罗切的手记》",
+      "description": "亚历山德罗·拉克罗切亲王耗费多年时间暗中钻研从意大利中部富奇诺沼泽获得的碑文。他的研究成果能助你解读富奇诺语文献。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "textbookfucine",
+      "reading": {
+        "intro": "这种语言与拉丁语有着共通之处，也与发狂老鼠的爪痕有着另一种共通之处。",
+        "content": "在有些方面，它与我会讲的那些语言一致。但在另一些方面……好吧，我明白他们为什么称这门语言为“女巫的语言”了。不过现在我对它已有足够理解。",
+        "effects": {
+          "textbookfucine": -1,
+          "scholarfucine": 1
+        }
+      }
+    },
+    {
+      "id": "textbookgreek",
+      "name": "《屈内与格特》",
+      "description": "屈内与格特合著的《Ausführliche Grammatik der griechischen Sprache》——“希腊语语法详解”，是与这门颇具挑战性的语言短兵相接时的必备武器。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "textbookgreek",
+      "reading": {
+        "intro": "诚然，我已经学会了希腊语的皮毛。但是我需要的不止是皮毛。",
+        "content": "这是一种果断而独特的语言，但我已经掌握了学习方法。",
+        "effects": {
+          "textbookgreek": -1,
+          "scholargreek": 1
+        }
+      }
+    },
+    {
+      "id": "textbookphrygian",
+      "name": "《维尔朔恩铭文》",
+      "description": "一部史诗，同时也是十足的艳诗，讲述了一个鲁莽的乐手和“赤红母亲”交合，最终被后者剥皮的故事——以希腊语和弗里吉亚语双语写就。由勇敢的卡尔·维尔朔恩在哈利卡纳苏斯某座神庙墙上发现，然而同样的铭文在它处亦有出现，且数目惊人。[如果你会希腊语，你可以凭借此书学会弗里吉亚语。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "textbookphrygian",
+      "reading": {
+        "intro": "弗里吉亚语，即迈达斯王、忒克墨萨公主、库柏勒的祭司所讲的语言。",
+        "content": "这种语言里的某种东西让人热血奔涌。也许现今已无人记得这种失落的语音是一件幸事。",
+        "effects": {
+          "textbookphrygian": -1,
+          "scholarphrygian": 1
+        }
+      }
+    },
+    {
+      "id": "textbookaramaic",
+      "name": "《术士冯·布兰特的独家信实手记——记至高真圣域之真语言》",
+      "description": "（《<b>术士冯·布兰特的独家信实手记——记至高真圣域之真语言</b>》）由某位绅士凭借一种超验主义的热情，亢奋地草草写成，不过无论如何，本书都是一本趁手的亚兰语入门指导。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "textbookaramaic",
+      "reading": {
+        "intro": "自然，“亚兰语”不只单一一种，不过我会尽我所能学习。",
+        "content": "我已经对其有了基本了解。",
+        "effects": {
+          "textbookaramaic": -1,
+          "scholararamaic": 1
+        }
+      }
+    },
+    {
+      "id": "textbookmandaic",
+      "name": "奥古斯特石",
+      "description": "硕大的碗状物，尺寸与锣相当，由黑色的玄武岩雕刻而成，碗身铭有对抗恶魔用的渊深曼达安语咒文。碗底则铭有同一咒文的亚兰语版本。[如果你会亚兰语，你可以凭借此书学会渊深曼达安语。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2
+      },
+      "type": "book",
+      "icon": "textbookmandaic",
+      "reading": {
+        "intro": "曼达安语是位于波斯最偏远地区的诺斯替派教徒所用的语言。渊深曼达安语只流传于该教派里的一个支派，但讲这种语言的学徒也一度出现过。",
+        "content": "这种语言的发音与亚兰语正好有相似之处，足够让我以此入手学习；但这也并非易事。",
+        "effects": {
+          "textbookmandaic": -1,
+          "scholarmandaic": 1
+        }
+      }
+    },
+    {
+      "id": "textbooksanskrit",
+      "name": "《加特赛德的梵语读本》",
+      "description": "本书思路清晰，为学习这门浩如烟海，错综复杂的语言指出了一条明路。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "textbooksanskrit",
+      "reading": {
+        "intro": "这种语言的名字意为“精炼的语言”。",
+        "content": "词汇太多，时间太少。我会在手边常备资料以供参考。",
+        "effects": {
+          "textbooksanskrit": -1,
+          "scholarsanskrit": 1
+        }
+      }
+    },
+    {
+      "id": "textbookvak",
+      "name": "《乌伊鲁斯》",
+      "description": "一尊复杂到难以置信的象牙雕塑。表面交错盘绕着梵语与对应的伐诃语铭文。[如果你会梵语，你可以凭借此物学习伐诃语——世界最初的语言。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 3
+      },
+      "type": "book",
+      "icon": "textbookvak",
+      "reading": {
+        "intro": "司辰会说话吗？如果会，这或许便是祂们使用的语言。",
+        "content": "据说伐诃语不是学能学会的，更别提对她了解了。怎么说呢，她与我现在更加熟稔了一点。",
+        "effects": {
+          "textbookvak": -1,
+          "scholarvak": 1
+        }
+      }
+    },
+    {
+      "id": "textbookreason",
+      "name": "文集",
+      "description": "头脑如刀，此书如砥。[研究此卡获得“博闻：学有所成”，可用于增长“理性”。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "textbookreason",
+      "reading": {
+        "intro": "锻炼智力。",
+        "content": "计算概率——",
+        "effects": {
+          "textbookreason": -1,
+          "eruditionplus": 1
+        }
+      }
+    },
+    {
+      "id": "textbookpassion",
+      "name": "诗集",
+      "description": "“诗人有意无限地，长久地搅乱自身的所有感官，获得预见世事的能力……”可喜的是，这与智慧背道而驰。[研究此卡获得“灵感：学有所成”，可用于增长“激情”。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "textbookpassion",
+      "reading": {
+        "intro": "我要让想象力燃得更旺。",
+        "content": "迸发灵感——",
+        "effects": {
+          "textbookpassion": -1,
+          "glimmeringplus": 1
+        }
+      }
+    },
+    {
+      "id": "genericrubbishbook",
+      "name": "惊天秘密！如此这般这般如此",
+      "description": "一篇耸人听闻的花边文章，描述了关于“隐秘世界”的一知半解的传闻和当今道德观如何脱节，内附一份荒唐不经，大概为杜撰而出的纵欲行为概览。[如果我从商店买到了这个，大概说明商店库存里已没有其他有趣的书籍。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1
+      },
+      "type": "book",
+      "icon": "genericrubbishbook"
+    },
+    {
+      "id": "dehoris1latin",
+      "name": "《司辰志·卷一》",
+      "description": "拉丁语著。一本于四世纪成书于十四世纪被译为拉丁语的书籍在十九世纪的重印本（作者为不知疲倦的纳撒尼尔·达西-埃弗斯）。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "dehoris1latin"
+    },
+    {
+      "id": "dehoris2latin",
+      "name": "《司辰志·卷二》",
+      "description": "拉丁语著。一本于四世纪成书于十四世纪被译为拉丁语的书籍在十九世纪的重印本（作者为不知疲倦的纳撒尼尔·达西-埃弗斯）。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "dehoris2latin"
+    },
+    {
+      "id": "debellismurorumlatin",
+      "name": "《墙垣之战》",
+      "description": "拉丁语著。十八世纪史诗，作者托名为“索利浦西斯托斯”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "debellismurorumlatin"
+    },
+    {
+      "id": "onwhatiscontainedbysilvergreek",
+      "name": "《论困于银镜之物》",
+      "description": "署名“牧人者”所著的动物寓言集。希腊语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "onwhatiscontainedbysilvergreek"
+    },
+    {
+      "id": "truecompleteasclepiangreek",
+      "name": "《对居屋根基的阿斯克利庇之谜真实而完整的记述》",
+      "description": "一部——据推测——更古老的文献的复制本，制作者署名“李利·格里斯”。希腊语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "truecompleteasclepiangreek"
+    },
+    {
+      "id": "orchidtransfigurations1latin",
+      "name": "《兰花变容·卷一》",
+      "description": "本书记录了十六世纪的炼金术狂想，据称为罗伯特·福路德所著，经常因其插图令人意乱神迷而遭禁。拉丁语原著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "orchidtransfigurations1latin"
+    },
+    {
+      "id": "orchidtransfigurations2latin",
+      "name": "《兰花变容·卷二》",
+      "description": "本书记录了十六世纪的炼金术狂想，据称为罗伯特·福路德所著，经常因其插图令人意乱神迷而遭禁。拉丁语原著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "orchidtransfigurations2latin"
+    },
+    {
+      "id": "orchidtransfigurations3latin",
+      "name": "《兰花变容·卷三》",
+      "description": "本书记录了十六世纪的炼金术狂想，据称为罗伯特·福路德所著，经常因其插图令人意乱神迷而遭禁。拉丁语原著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "orchidtransfigurations3latin"
+    },
+    {
+      "id": "geminiadfucine",
+      "name": "《双生姝丽》",
+      "description": "一本脆弱易破的手抄书，里面最引人瞩目的是一对同体孪生、光彩照人的忧郁美人形象和完整月相的图例。本书或能追溯到七世纪，而书中所用的语言——富奇诺语——则更加古老。书封面饰有珊瑚，书页边则十分锋利，足以割破咽喉。",
+      "aspects": {
+        "knock": 2,
+        "tool": 1,
+        "text": 1,
+        "auctionable": 1,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "geminiadfucine"
+    },
+    {
+      "id": "textbookfucinelatin",
+      "name": "加密的《亚历山德罗·拉克罗切的手记》",
+      "description": "亚历山德罗·拉克罗切亲王耗费多年时间暗中钻研从意大利中部富奇诺沼泽获得的碑文。他的研究成果能够助你阅读富奇诺语文献……不过本书以一种简单的拉丁语密码写成，你需要先破译密码。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "textbookfucinelatin"
+    },
+    {
+      "id": "textbookphrygiangreek",
+      "name": "《维尔朔恩铭文》",
+      "description": "抄自一面墙壁的数百行希腊语与对应的弗里吉亚语诗歌。类似于——甚至完全同于——在哈利卡纳苏斯发现的卡尔·维尔朔恩碑文。[如果你会希腊语，你可以凭借此物学习弗里吉亚语。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "textbookphrygiangreek"
+    },
+    {
+      "id": "textbookmandaicaramaic",
+      "name": "奥古斯特石",
+      "description": "硕大的碗状物，尺寸与锣相当，由黑色的玄武岩雕刻而成，铭有亚兰语和曼达安语的咒文。[如果你会亚兰语，你可以凭借此物学习曼达安语。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "textbookmandaicaramaic"
+    },
+    {
+      "id": "textbookvaksanskrit",
+      "name": "神秘雕塑",
+      "description": "一尊复杂到难以置信的象牙雕塑。表面交错盘绕着梵语与对应的伐诃语铭文。[如果你会梵语，你可以凭借此物学习伐诃语——世界最初的语言。]",
+      "aspects": {
+        "text": 1,
+        "auctionable": 1,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "textbookvaksanskrit"
+    },
+    {
+      "id": "irreproachabletraditionssocietynobleendeavourlatin",
+      "name": "《高贵之举社团……》",
+      "description": "《高贵之举社团那无可指摘的传承》。拉丁语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "irreproachabletraditionssocietynobleendeavourlatin"
+    },
+    {
+      "id": "roseofnurielgreek",
+      "name": "《努列尔宝训集》",
+      "description": "印有某秘传默观修会的标志，该修会通称绳结姐妹会。希腊语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "roseofnurielgreek"
+    },
+    {
+      "id": "roseofhypatiagreek",
+      "name": "《希帕提娅宝训集》",
+      "description": "印有某秘传默观修会的标志，该修会通称绳结姐妹会。希腊语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "roseofhypatiagreek"
+    },
+    {
+      "id": "roseofwazneigreek",
+      "name": "《瓦兹内宝训集》",
+      "description": "印有某秘传默观修会的三倍形标志，该修会通称绳结姐妹会……但加上了第四片草叶，整个标志被破坏了。希腊语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "roseofwazneigreek"
+    },
+    {
+      "id": "sunsetpassageslatin",
+      "name": "《日落殊途》",
+      "description": "“无敌太阳教会”的经文，该教会在许多重历史中被迫转入地下。拉丁语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "sunsetpassageslatin"
+    },
+    {
+      "id": "gospelzacchaeusgreek",
+      "name": "《撒该福音》",
+      "description": "失传的基督教早期文献？以希腊语书写。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "gospelzacchaeusgreek"
+    },
+    {
+      "id": "matthiasamethystlossaramaic",
+      "name": "《马提亚斯与紫晶成虫：失去》",
+      "description": "书中的图解和插图在数世纪后依然优美精致，催人困意，偶尔还催人肉欲。亚兰语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "matthiasamethystlossaramaic"
+    },
+    {
+      "id": "matthiasamethysttransformationaramaic",
+      "name": "《马提亚斯与紫晶成虫：嬗变》",
+      "description": "书中的图解和插图在数世纪后依然优美精致，催人困意，偶尔还催人肉欲。亚兰语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "matthiasamethysttransformationaramaic"
+    },
+    {
+      "id": "matthiasamethystpursuitaramaic",
+      "name": "《马提亚斯与紫晶成虫：追寻》",
+      "description": "书中的图解和插图在数世纪后依然优美精致，催人困意，偶尔还催人肉欲。亚兰语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "matthiasamethystpursuitaramaic"
+    },
+    {
+      "id": "franklinbancroftdiarieslatin",
+      "name": "《富兰克林·班克罗夫特勋爵1750-1790年间日记》",
+      "description": "一本臭名昭著的绅士所写的臭名昭著的手记，以拉丁语写成，无疑是为了安全起见。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "franklinbancroftdiarieslatin"
+    },
+    {
+      "id": "indignitiesobliviatelatin",
+      "name": "《惯于欺瞒的忘却互助会造成的种种侮辱伤害》",
+      "description": "本书同时以其语调中近乎语无伦次的愤怒，以及它所含有的知识而闻名。拉丁语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "indignitiesobliviatelatin"
+    },
+    {
+      "id": "furioustantrasanskrit",
+      "name": "《狂怒密续》",
+      "description": "通说原文是由雷电在橡树树皮上烧灼而成，后被灵媒兼烟火技师雅各布·奥利弗·贵玛玽斯通发现并誊写下来。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "furioustantrasanskrit"
+    },
+    {
+      "id": "devouredtantrasanskrit",
+      "name": "《贪食密续》",
+      "description": "外交官兼教士斯坦尼斯拉夫·约翰·沙勒从某位赤红长生者的藏书中誊来了此文。不过，他这篇手抄稿现在成了凯尔伊苏姆某人的私藏。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "devouredtantrasanskrit"
+    },
+    {
+      "id": "ceaselesstantrasanskrit",
+      "name": "《无休密续》",
+      "description": "先锋派编舞家尼古拉斯·凯尔创作的气势汹汹的芭蕾舞中据说编入了该密续。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "ceaselesstantrasanskrit"
+    },
+    {
+      "id": "knownunknowntantrasanskrit",
+      "name": "《昧知密续》",
+      "description": "作者卡洛斯·加西亚·绍里，比利牛斯山中痴狂的神秘主义者，以会用三种语言背诵本文而闻名，尽管他从未造访过那片次大陆。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "knownunknowntantrasanskrit"
+    },
+    {
+      "id": "encirclingtantrasanskrit",
+      "name": "《盘绕密续》",
+      "description": "探险家兼企业家T·埃弗莱特·杜普兰提斯曾经试图劫掠这篇经文所在的寺庙。他的命运被记在了附录里。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "encirclingtantrasanskrit"
+    },
+    {
+      "id": "shavenlocktantrasanskrit",
+      "name": "《剃度密续》",
+      "description": "又称《剃发之人》。据传说，连善于变形的瓦纳拉猴族都拒绝承认这篇密传。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "shavenlocktantrasanskrit"
+    },
+    {
+      "id": "tantrawormssanskrit",
+      "name": "《蠕虫密续》",
+      "description": "昆虫学家朱莉安娜·萨斯托斯基最终坚称本书为寄居在人类体内的昆虫所作。她从来没为她的说法提供过证据。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "tantrawormssanskrit"
+    },
+    {
+      "id": "bookofcentipedegreek",
+      "name": "《蜈蚣之书》",
+      "description": "1860年代中期，某位“伊女士”曾展示过一种娱乐方式，她称其源头来自本书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "bookofcentipedegreek"
+    },
+    {
+      "id": "accountkanishkspidersdooraramaic",
+      "name": "《迦腻色伽在蜘蛛之门前的经过》",
+      "description": "这份记录的作者是洛克·卡胡利，受迦腻色伽所害者兼其情人，也许是在死后写下。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "accountkanishkspidersdooraramaic"
+    },
+    {
+      "id": "vinzantinscriptionsphrygian",
+      "name": "《文赞特铭文》",
+      "description": "埃弗莱特·文赞特从安纳托利亚的一处悬崖誊下了这份铭文，他因在那里被闪电击中后幸存而闻名遐迩。他死于七年后的同一天。传说称，在他死后，他的骨头仍然触手火热。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "vinzantinscriptionsphrygian"
+    },
+    {
+      "id": "larquebinecodexphrygian",
+      "name": "《拉奎伯斯写本》",
+      "description": "克里斯托弗·拉奎伯斯声称自己从马尔马拉海岸边一个女巫家庭买到了两本本书的手抄复制品。第三本“献给了大海”。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "larquebinecodexphrygian"
+    },
+    {
+      "id": "againstsisterhoodknotgreek",
+      "name": "《对绳结姐妹会……》",
+      "description": "《对绳结姐妹会与其堕落习俗之批判》。“伪寻爱绮梦式”耶罗尼米斯写下这篇狂怒的长篇大论，抨击姐妹会对他所属的“无敌太阳教会”的邪恶影响。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "againstsisterhoodknotgreek"
+    },
+    {
+      "id": "morphycodexaramaic",
+      "name": "《墨菲写本》",
+      "description": "绳结姐妹会的文献，由埃文·墨菲发掘。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "morphycodexaramaic"
+    },
+    {
+      "id": "leoninetantrasanskrit",
+      "name": "《狮子密续》",
+      "description": "在《狮子密续》最为臭名昭著的译本中，阿什利·菲利普斯被列为翻译者，但书的序言明确否定译者的存在。这种令人困惑之处正是提及兜颈贵胄的书籍的特征。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "leoninetantrasanskrit"
+    },
+    {
+      "id": "incandescenttantrasanskrit",
+      "name": "《炽热密续》",
+      "description": "为人古怪的钢铁大亨迈克尔·布洛克利喜欢引用该密续的语句。此人死于工厂火灾。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "incandescenttantrasanskrit"
+    },
+    {
+      "id": "thirstingtantrasanskrit",
+      "name": "《干渴密续》",
+      "description": "禁酒活动家C·G·布里尔在宣传小册子里刊登了该密续的部分内容；当这本小册子变得过于流行时，人们不得不将其回收销毁。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "thirstingtantrasanskrit"
+    },
+    {
+      "id": "flayedtantrasanskrit",
+      "name": "《剥皮密续》",
+      "description": "据记载，该密续由一个人称“褪皮”的神秘人物口述而来，介绍了神话中的那伽大蛇的很多习性。《剥皮密续》在亚历山大·斯派鹭那本充满被害妄想的小册子里占很大比重。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "flayedtantrasanskrit"
+    },
+    {
+      "id": "watchfultantrasanskrit",
+      "name": "《警夜密续》",
+      "description": "因导致达菲德·琼斯和梅雷迪斯·布莱恩之死而臭名昭著；这两位早年间的物理学家都称自己拥有该书的唯一抄本，最终于1840年进行了一场决斗。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "watchfultantrasanskrit"
+    },
+    {
+      "id": "twinserpenttantrasanskrit",
+      "name": "《孪蛇密续》",
+      "description": "一部尤为晦涩的密续经文。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "twinserpenttantrasanskrit"
+    },
+    {
+      "id": "firecircletantrasanskrit",
+      "name": "《旋火密续》",
+      "description": "西欧已知现存的唯一一份抄本在1892年于大英图书馆失盗。一个叫做哈维·哈丁顿的人承认这是自己的犯行，并称已在无法控制的奇异冲动下，就着黄油和大蒜吃掉了本书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textsanskrit": 1
+      },
+      "type": "book",
+      "icon": "firecircletantrasanskrit"
+    },
+    {
+      "id": "asthesunhiscoursearamaic",
+      "name": "《其躔如日》",
+      "description": "退休士兵，时而以收费员为职业的“桥上的”乔伊写下了这首史诗，内容是亚历山大在与阿契美尼德王朝交战时，于伊苏斯做出无法解释的撤退决定，随后回师马其顿的故事。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "asthesunhiscoursearamaic"
+    },
+    {
+      "id": "concursumdiariesphrygian",
+      "name": "《聚点日记》",
+      "description": "探险家及杀人犯拉尔斯·韦斯特格伦的日记。不巧的是，他为了防人耳目将其翻译成了弗里吉亚语。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "concursumdiariesphrygian"
+    },
+    {
+      "id": "ironbookfucine",
+      "name": "《铁之书》",
+      "description": "利米亚教团的指南书。该教团由类不死者组成，占据了罗马行省西斯班尼亚·加拉埃西亚，利米亚河源头一块隐秘的飞地。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "ironbookfucine"
+    },
+    {
+      "id": "silverbookfucine",
+      "name": "《银之书》",
+      "description": "利米亚教团的指南书。该教团由类不死者组成，占据了罗马行省西斯班尼亚·加拉埃西亚，利米亚河源头一块隐秘的飞地。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "silverbookfucine"
+    },
+    {
+      "id": "ivorybookfucine",
+      "name": "《白骨之书》",
+      "description": "利米亚教团的指南书。该教团由类不死者组成，占据了罗马行省西斯班尼亚·加拉埃西亚，利米亚河源头一块隐秘的飞地。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "ivorybookfucine"
+    },
+    {
+      "id": "worlddoesnotweeparamaic",
+      "name": "《世界从不落泪》",
+      "description": "“棕色”约书亚在哈马城中的一口井里找到了本书。有不可信的传说称本书为亚历山大从伊苏斯撤退时所弃。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "worlddoesnotweeparamaic"
+    },
+    {
+      "id": "deedsofthescarredcaptaingreek",
+      "name": "《伤疤上尉事迹录》",
+      "description": "由靠做雇佣兵，也有时靠家里汇钱过活的帕维尔·舒加在希腊生活时煞费苦心地收集成书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "deedsofthescarredcaptaingreek"
+    },
+    {
+      "id": "bookofdissolutionmandaic",
+      "name": "《融解之书》",
+      "description": "亚历山大·普罗布斯特承袭杰·维苟财·詹森的基础性工作，修复了本书存于波斯某山中寺庙的一份抄本。本书在别处也时有发现，通常是烙刻在石头上。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textmandaic": 1
+      },
+      "type": "book",
+      "icon": "bookofdissolutionmandaic"
+    },
+    {
+      "id": "catalogueofunchartedpleasuresphrygian",
+      "name": "《未知快感概览》",
+      "description": "“黑暗绅士”是这本抄本众多的书唯一被认出的，且认出时相当大张旗鼓的作者。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "catalogueofunchartedpleasuresphrygian"
+    },
+    {
+      "id": "thosewhodonotsleepfucine",
+      "name": "《不眠者》",
+      "description": "研究神秘学的富奇诺语文献，署名布罗德纳克斯。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "thosewhodonotsleepfucine"
+    },
+    {
+      "id": "theskythesoularamaic",
+      "name": "《魂归苍穹》",
+      "description": "凯勒的鸿篇巨制，一首写于无影众王宫廷的禁欲主义诗歌。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "theskythesoularamaic"
+    },
+    {
+      "id": "onthematterandthedeedsofserpentsvak",
+      "name": "《蛇族事迹考察》",
+      "description": "本书大概是翻成英语的“那迦大蛇的预言”，其插图由“威廉·米德奈特”在1880年代绘制于巴黎；但本书与该预言又显出多处不同。以伐诃语文献的标准来看，本书的年代显然是很近的。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "onthematterandthedeedsofserpentsvak"
+    },
+    {
+      "id": "serenityofblackwoodgreek",
+      "name": "《黑林地的静谧》",
+      "description": "关于“遗忘家族”的寓言式史书，书中暗示该组织受蜈蚣的启发。时至如今，“塞雷诺·布莱克伍德（意为静谧黑林地）”一直是对密教的别称。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "serenityofblackwoodgreek"
+    },
+    {
+      "id": "bookofthronesphrygian",
+      "name": "《王座之书》",
+      "description": "一本无影帝国的传奇故事，由亚历山大·彼得汉斯誊自安纳托利亚一个隐秘神庙的年鉴。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "bookofthronesphrygian"
+    },
+    {
+      "id": "secondglorymandaic",
+      "name": "《第二辉光》",
+      "description": "由祭司兼隐世的学者尤赛所作。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textmandaic": 1
+      },
+      "type": "book",
+      "icon": "secondglorymandaic"
+    },
+    {
+      "id": "bookoftruebloodlatin",
+      "name": "《真血之书》",
+      "description": "由圣多默派教徒卡西乌斯所作。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textlatin": 1
+      },
+      "type": "book",
+      "icon": "bookoftruebloodlatin"
+    },
+    {
+      "id": "burningwomanphrygian",
+      "name": "《燃烧的女人》",
+      "description": "一部译为弗里吉亚语的戏剧抄本，带评注，署名为“胜利者”米南德，此人可能是这个剧本的剧作家。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "burningwomanphrygian"
+    },
+    {
+      "id": "twentysixenticementsseventormentsfucine",
+      "name": "《二十六种诱惑与七类苦痛》",
+      "description": "画家尼尔斯·弗雷德里克·马斯凯尔曾做过一件臭名昭著之事：试图以这些苦痛为题作画。画到第五类苦痛时，画作的欲求增长得过于急切，使得他因失血而死。所幸书中的图解没有那么详细。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "twentysixenticementsseventormentsfucine"
+    },
+    {
+      "id": "historyofshadowlesskingsaramaic",
+      "name": "《真实准确的无影众王史》",
+      "description": "无影帝国的历史，卡斯的伊萨克著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textaramaic": 1
+      },
+      "type": "book",
+      "icon": "historyofshadowlesskingsaramaic"
+    },
+    {
+      "id": "highmysterieschurchsolarfucine",
+      "name": "《吾太阳神教……》",
+      "description": "《吾太阳神教核心厅室之极密》。本书记载了无敌太阳教会的秘密仪式，该教至少在两重历史上掌握过权势。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "highmysterieschurchsolarfucine"
+    },
+    {
+      "id": "medusaslamentgreek",
+      "name": "《美杜莎的哀叹》",
+      "description": "描写了名为七蟠的司辰，又称“母亲之父”的死亡。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textgreek": 1
+      },
+      "type": "book",
+      "icon": "medusaslamentgreek"
+    },
+    {
+      "id": "bookofmasksphrygian",
+      "name": "《面具之书》",
+      "description": "雅典娜·凡娜对名为浪游旅人的流浪司辰的研究手记。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "bookofmasksphrygian"
+    },
+    {
+      "id": "inthemountainsasupontheplainvak",
+      "name": "《山中亦如平川……》",
+      "description": "《山中亦如平川，许无前人未达之途》，作者是拉格什的宁娜伽勒。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "inthemountainsasupontheplainvak"
+    },
+    {
+      "id": "memoryofgodsfucine",
+      "name": "《缅怀诸神》",
+      "description": "作者是“坟茔之子”，一位无名的高卢人学徒，曾加入名为河泽教团的组织。在书中，作者带着遗憾之意记述了在人类存在之前的时枢神，石源诸神的毁灭。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "memoryofgodsfucine"
+    },
+    {
+      "id": "sevenfoldslayingsevencoiledfucine",
+      "name": "《七步斩七蟠》",
+      "description": "记录了远古司辰——一位石源神的毁灭。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "sevenfoldslayingsevencoiledfucine"
+    },
+    {
+      "id": "bighufffucine",
+      "name": "《我的事迹、我的力量、我的成就……》",
+      "description": "《我的事迹、我的力量、我的成就和我所面临的不公》",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "bighufffucine"
+    },
+    {
+      "id": "dreamconspiracyskiesphrygian",
+      "name": "《降天祛孽之梦》",
+      "description": "由名声扫地的神谕者达马翁·阿谮那滕筛选收集而成。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "dreamconspiracyskiesphrygian"
+    },
+    {
+      "id": "bookwhitecatphrygian",
+      "name": "《白猫之书》",
+      "description": "由一只瞎眼白猫传递给戈尔迪翁的佩涅罗佩的故事。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "bookwhitecatphrygian"
+    },
+    {
+      "id": "focusambermandaic",
+      "name": "《琥珀之光》",
+      "description": "由“炽焰”奥马尔在苦修中所作。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textmandaic": 1
+      },
+      "type": "book",
+      "icon": "focusambermandaic"
+    },
+    {
+      "id": "songscarapacecrossmandaic",
+      "name": "《介壳种之歌》",
+      "description": "一部时遭损毁的著作，作者是米卡·席。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textmandaic": 1
+      },
+      "type": "book",
+      "icon": "songscarapacecrossmandaic"
+    },
+    {
+      "id": "originsofhoursvak",
+      "name": "《司辰的起源》",
+      "description": "一本伐诃语著作，内或有关于隐秘诸神的不同起源的流言。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "originsofhoursvak"
+    },
+    {
+      "id": "wherehasshegonevak",
+      "name": "《她去到过何地？》",
+      "description": "以伐诃语写就，讨论了浪游旅人的行程。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "wherehasshegonevak"
+    },
+    {
+      "id": "bookextinguishedheartmandaic",
+      "name": "《寂灭之心》",
+      "description": "一本忧郁伤感的预言书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textmandaic": 1
+      },
+      "type": "book",
+      "icon": "bookextinguishedheartmandaic"
+    },
+    {
+      "id": "howendwillbeginvak",
+      "name": "《终结如何开始》",
+      "description": "一本愁云惨雾的预言书。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "howendwillbeginvak"
+    },
+    {
+      "id": "manneralchemistsparedvak",
+      "name": "《炼金术师保命之法》",
+      "description": "一本仿炼金术文风的文献，伐诃语著。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "manneralchemistsparedvak"
+    },
+    {
+      "id": "fivecreationsvak",
+      "name": "《五大创造论》",
+      "description": "游学者肖黑在本书中讨论了五种人类可能的起源，并佐以一个蒙面的，他称之为“拾滩鸦”的形象。肖黑之后又称这些描述已全部被证伪，但无论如何，讨论本身还是被记录了下来。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "fivecreationsvak"
+    },
+    {
+      "id": "commandspreservationallexistsmandaic",
+      "name": "《关于维持一切事物……》",
+      "description": "《关于维持一切事物存续的教令》。大马士革绳结姐妹会的头领“黑色”艾丽遭到了皇帝狄第乌斯·尤利安努斯囚禁。据记载，她曾命人将这些秘密教义记录成书，以保其免于遗失，永远存续。遗憾的是，据传说狄第乌斯·尤利安努斯命人将本作随她葬入了一个没有标记的墓室。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textmandaic": 1
+      },
+      "type": "book",
+      "icon": "commandspreservationallexistsmandaic"
+    },
+    {
+      "id": "timedivisionmandaic",
+      "name": "《分裂之时》",
+      "description": "阿米拉·扎拉在本书中预言了后人称为“置闰”的事件：名为骄阳的司辰被分裂。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textmandaic": 1
+      },
+      "type": "book",
+      "icon": "timedivisionmandaic"
+    },
+    {
+      "id": "manualdeparturevak",
+      "name": "《脱身手册》",
+      "description": "作者自称杰卡杜，为圣河流域的兜颈贵胄之一。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textvak": 1
+      },
+      "type": "book",
+      "icon": "manualdeparturevak"
+    },
+    {
+      "id": "birdsongphrygian",
+      "name": "《伊纳姆、卡皮吉吉努皮尔、加尔基、克雷皮斯》",
+      "description": "书中的四个神秘人物讲述了他们多年来在“栖木”——鸟型司辰的集会地——听到的故事。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textphrygian": 1
+      },
+      "type": "book",
+      "icon": "birdsongphrygian"
+    },
+    {
+      "id": "voyagesfofucine",
+      "name": "《奥莱尔的斐宁舜之远航记》",
+      "description": "一名腓尼基时代晚期的船长不可思议的旅行记。本书自有记录的历史以来一直遭到封锁：据说读过的人会失踪。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "voyagesfofucine"
+    },
+    {
+      "id": "scarskyfucine",
+      "name": "《天宇的伤疤》",
+      "description": "作者宁在写下本书后追悔不迭。",
+      "aspects": {
+        "text": 1,
+        "auctionable": 2,
+        "textfucine": 1
+      },
+      "type": "book",
+      "icon": "scarskyfucine"
+    }
+  ]
+}

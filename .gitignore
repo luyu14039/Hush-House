@@ -1,0 +1,21 @@
+# Game Files (Do not commit)
+Book of Hours/
+Cultist Simulator/
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ENV/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Build Output
+frontend/dist/

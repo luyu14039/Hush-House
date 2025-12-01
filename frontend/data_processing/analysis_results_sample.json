@@ -1,0 +1,88 @@
+{
+  "relationships": [
+    {
+      "source": "hour.moth",
+      "target": "hour.ring_yew",
+      "type": "associated_with",
+      "description": "Both are mentioned as part of the '林地司辰' (Woodland Hours) in the same volume, indicating a thematic association within the woodland context.",
+      "confidence": 0.9
+    },
+    {
+      "source": "hour.moth",
+      "target": "hour.velvet",
+      "type": "associated_with",
+      "description": "The fragment mentions '漆黑亚麻' (Black Linen) as a woodland Hour, which is an alias for The Velvet, and describes their responses to '辉光' (Radiance), linking them thematically.",
+      "confidence": 0.9
+    },
+    {
+      "source": "hour.velvet",
+      "target": "hour.ring_yew",
+      "type": "associated_with",
+      "description": "Both are part of the '林地司辰' (Woodland Hours) discussed in the same fragment, suggesting a shared woodland association.",
+      "confidence": 0.9
+    },
+    {
+      "source": "hour.lionsmith",
+      "target": "hour.colonel",
+      "type": "opposed_to",
+      "description": "The fragment explicitly describes an adversarial relationship where the Lionsmith creates monsters to defeat the Colonel, and the Colonel's scars are weapons against this.",
+      "confidence": 1
+    },
+    {
+      "source": "hour.lionsmith",
+      "target": "hour.colonel",
+      "type": "created",
+      "description": "The Lionsmith creates monsters intended to defeat the Colonel, indicating a creation relationship in the context of their conflict.",
+      "confidence": 0.8
+    },
+    {
+      "source": "person.christopher_illopoly",
+      "target": "hour.moth",
+      "type": "associated_with",
+      "description": "Christopher Illopoly's dream journals describe visits to the Woodland through silver dreams, which is associated with the Moth and other woodland Hours.",
+      "confidence": 0.7
+    },
+    {
+      "source": "person.christopher_illopoly",
+      "target": "hour.ring_yew",
+      "type": "associated_with",
+      "description": "His dreams involve the Woodland, where the Ring-Yew is a key Hour, linking him to this entity.",
+      "confidence": 0.7
+    },
+    {
+      "source": "person.christopher_illopoly",
+      "target": "hour.velvet",
+      "type": "associated_with",
+      "description": "As part of the woodland Hours, the Velvet is implicitly associated with Illopoly's dream visits to the Woodland.",
+      "confidence": 0.7
+    },
+    {
+      "source": "location.mansus",
+      "target": "hour.moth",
+      "type": "located_in",
+      "description": "The fragment mentions the Woodland growing outside the Mansus walls, and the Moth is a woodland Hour, implying its presence in or near the Mansus.",
+      "confidence": 0.8
+    },
+    {
+      "source": "location.mansus",
+      "target": "hour.ring_yew",
+      "type": "located_in",
+      "description": "The Woodland, associated with the Ring-Yew, is described in relation to the Mansus, suggesting its location in the dream realm.",
+      "confidence": 0.8
+    },
+    {
+      "source": "location.mansus",
+      "target": "hour.velvet",
+      "type": "located_in",
+      "description": "As a woodland Hour, the Velvet is linked to the Woodland outside the Mansus, indicating a spatial relationship.",
+      "confidence": 0.8
+    },
+    {
+      "source": "hour.moth",
+      "target": "hour.velvet",
+      "type": "opposed_to",
+      "description": "The fragment states that the Moth answers with affirmation and the Velvet with negation to '辉光' (Radiance), suggesting a philosophical or thematic opposition.",
+      "confidence": 0.8
+    }
+  ]
+}
