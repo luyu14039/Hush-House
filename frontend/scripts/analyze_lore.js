@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Configuration
-const API_KEY = 'sk-1c8f763b0a0340c5945bcd28cffed101';
+const API_KEY = 'YOUR API';
 // Speciale model endpoint (expires 2025-12-15)
 const API_URL = 'https://api.deepseek.com/v3.2_speciale_expires_on_20251215/chat/completions';
 const MODEL_NAME = 'deepseek-reasoner'; 
