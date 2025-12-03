@@ -138,7 +138,8 @@ const RELATIONSHIP_TRANSLATIONS: Record<string, string> = {
   "DISCOVERED": "发现",
   "HID_AT": "藏身于",
   "ADOPTED": "收养",
-  "ADVOCATES_FOR": "倡导"
+  "ADVOCATES_FOR": "倡导",
+  "PREDECESSOR_OF": "前身"
 };
 
 const translateLabel = (label: string) => {

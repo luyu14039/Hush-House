@@ -3,21 +3,22 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Configuration
-const API_KEY = process.env.DEEPSEEK_API_KEY || 'YOUR_API_KEY_HERE';
-const API_URL = 'https://api.deepseek.com/chat/completions';
-const MODEL_NAME = 'deepseek-chat';
+const API_KEY = 'sk-1c8f763b0a0340c5945bcd28cffed101';
+// Speciale model endpoint (expires 2025-12-15)
+const API_URL = 'https://api.deepseek.com/v3.2_speciale_expires_on_20251215/chat/completions';
+const MODEL_NAME = 'deepseek-reasoner'; 
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const DATA_DIR = path.join(__dirname, '../data_processing');
 
 // Load Data
-const entities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'entities.json'), 'utf-8'));
+const initialEntities = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'entities.json'), 'utf-8'));
 const corpus = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'corpus.json'), 'utf-8'));
 
 // Helper: Construct System Prompt
-const getSystemPrompt = () => {
-    const entityList = entities.map(e => {
+const getSystemPrompt = (currentEntities) => {
+    const entityList = currentEntities.map(e => {
         let info = `${e.name} (ID: ${e.id})`;
         if (e.aliases && e.aliases.length) info += `, Aliases: [${e.aliases.join(', ')}]`;
         if (e.origin) info += `, Origin: ${e.origin}`;
@@ -80,7 +81,7 @@ Return a JSON object with two arrays: "relationships" and "new_entities".
 };
 
 // Helper: Call API
-async function analyzeBatch(items) {
+async function analyzeBatch(items, currentEntities) {
     const userPrompt = items.map(item => `
 ---
 Fragment ID: ${item.id}
@@ -92,11 +93,11 @@ Fragment Text: ${item.text}
     const payload = {
         model: MODEL_NAME,
         messages: [
-            { role: "system", content: getSystemPrompt() },
+            { role: "system", content: getSystemPrompt(currentEntities) },
             { role: "user", content: `Analyze the following lore fragments and extract relationships:\n${userPrompt}` }
         ],
-        temperature: 1.0, // High temperature for creative extraction as recommended
-        response_format: { type: "json_object" }
+        // temperature: 1.0, // Not supported for deepseek-reasoner
+        // response_format: { type: "json_object" } // Not supported for deepseek-reasoner
     };
 
     try {
@@ -116,7 +117,26 @@ Fragment Text: ${item.text}
         }
 
         const data = await response.json();
-        return JSON.parse(data.choices[0].message.content);
+        // For deepseek-reasoner, content might be wrapped in markdown code blocks
+        let content = data.choices[0].message.content;
+        
+        // Robust JSON extraction: Find the first '{' and last '}'
+        const jsonStart = content.indexOf('{');
+        const jsonEnd = content.lastIndexOf('}');
+        
+        if (jsonStart !== -1 && jsonEnd !== -1) {
+            content = content.substring(jsonStart, jsonEnd + 1);
+        } else {
+            console.warn("Warning: No JSON object found in response content.");
+        }
+        
+        try {
+            return JSON.parse(content);
+        } catch (parseError) {
+            console.error("JSON Parse Error. Raw content snippet (first 500 chars):", content.substring(0, 500));
+            console.error("Raw content snippet (last 500 chars):", content.substring(Math.max(0, content.length - 500)));
+            throw parseError;
+        }
     } catch (error) {
         console.error("Error calling DeepSeek:", error);
         return null;
@@ -125,10 +145,16 @@ Fragment Text: ${item.text}
 
 // Main Execution
 async function main() {
-    const CHUNK_SIZE = 10; // Process 10 items at a time to respect token limits
+    // Increased chunk size for 128k context model
+    // Assuming avg fragment is ~500 tokens, 50 items = 25k tokens, well within 128k limit
+    // Output limit is also 128k, so we can handle large responses
+    const CHUNK_SIZE = 50; 
     const allRelationships = [];
     const allNewEntities = [];
     const totalBatches = Math.ceil(corpus.length / CHUNK_SIZE);
+    
+    // Initialize dynamic knowledge base with initial entities
+    let dynamicEntities = JSON.parse(JSON.stringify(initialEntities));
 
     console.log(`Starting full analysis of ${corpus.length} items in ${totalBatches} batches...`);
 
@@ -139,7 +165,8 @@ async function main() {
         console.log(`Processing Batch ${batchNum}/${totalBatches} (Items ${i + 1}-${Math.min(i + CHUNK_SIZE, corpus.length)})...`);
         
         try {
-            const result = await analyzeBatch(batch);
+            // Pass dynamicEntities to analyzeBatch
+            const result = await analyzeBatch(batch, dynamicEntities);
             if (result) {
                 if (result.relationships) {
                     allRelationships.push(...result.relationships);
@@ -148,6 +175,19 @@ async function main() {
                 if (result.new_entities) {
                     allNewEntities.push(...result.new_entities);
                     console.log(`  Found ${result.new_entities.length} new entities.`);
+                    
+                    // Update dynamic knowledge base with new entities
+                    let addedCount = 0;
+                    for (const newEntity of result.new_entities) {
+                        // Check if ID already exists to avoid duplicates in prompt
+                        if (!dynamicEntities.find(e => e.id === newEntity.id)) {
+                            dynamicEntities.push(newEntity);
+                            addedCount++;
+                        }
+                    }
+                    if (addedCount > 0) {
+                        console.log(`  [Knowledge Base] Added ${addedCount} new entities to context for next batch.`);
+                    }
                 }
             }
         } catch (err) {
