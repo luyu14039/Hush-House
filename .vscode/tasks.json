@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "append_css",
+			"type": "shell",
+			"command": "echo \"/* Mystic Emergence Animation */\n@keyframes mystic-emerge {\n  0% {\n    opacity: 0;\n    transform: translateY(10px) scale(0.98);\n    filter: blur(4px);\n  }\n  100% {\n    opacity: 1;\n    transform: translateY(0) scale(1);\n    filter: blur(0);\n  }\n}\n\n.animate-mystic-emerge {\n  animation: mystic-emerge 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;\n}\" >> frontend/src/index.css",
+			"group": "build"
+		}
+	]
+}

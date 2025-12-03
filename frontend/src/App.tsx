@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Layout } from './components/Layout'
 import { Catalogue } from './components/Catalogue'
 import { Loom } from './components/Loom'
+import { BookReader } from './components/BookReader'
 import LoreNetworkGraph from './components/LoreNetworkGraph'
 import { getAllItems } from './services/dataService'
 import { getAspectInfo } from './utils/aspects'
@@ -62,7 +63,7 @@ function App() {
   }, [])
 
   return (
-    <Layout>
+    <Layout variant={viewMode === 'reader' && selectedItem ? 'reader' : 'default'}>
       {/* Slot 1: Catalogue & Navigation */}
       <div className="flex flex-col h-full">
         <div className="flex border-b border-gold/10 mb-2">
@@ -116,74 +117,12 @@ function App() {
           }}
         />
       ) : selectedItem ? (
-        <div className="max-w-4xl mx-auto animate-fade-in">
-          <div className="border-b border-gold/30 pb-6 mb-8">
-            <h2 className="font-display text-4xl text-gold mb-6 text-center lg:text-left">{selectedItem.name}</h2>
-            
-            {/* Description Section */}
-            <div className="bg-black/20 p-6 rounded-sm border border-gold/5">
-              <h3 className="text-gold/50 font-display text-xs uppercase tracking-widest mb-3">描述</h3>
-              <div 
-                className="text-parchment/80 italic font-serif leading-relaxed text-lg"
-                dangerouslySetInnerHTML={{ __html: selectedItem.description }}
-              />
-            </div>
-          </div>
-          
-          {/* Reading Content */}
-          {selectedItem.readings && selectedItem.readings.length > 0 ? (
-            <div className="space-y-8">
-              {selectedItem.readings.map((reading, idx) => (
-                <div key={idx} className="bg-parchment/5 p-8 rounded-sm border border-gold/10 relative overflow-hidden group shadow-[0_0_30px_rgba(0,0,0,0.3)] transition-all duration-700 hover:shadow-[0_0_50px_rgba(212,175,55,0.1)]">
-                  {/* Decorative Corners */}
-                  <div className="absolute top-0 left-0 w-3 h-3 border-t border-l border-gold/30 group-hover:border-gold/60 transition-colors"></div>
-                  <div className="absolute top-0 right-0 w-3 h-3 border-t border-r border-gold/30 group-hover:border-gold/60 transition-colors"></div>
-                  <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-gold/30 group-hover:border-gold/60 transition-colors"></div>
-                  <div className="absolute bottom-0 right-0 w-3 h-3 border-b border-r border-gold/30 group-hover:border-gold/60 transition-colors"></div>
-                  
-                  {/* Subtle Background Rune/Symbol */}
-                  <div className="absolute -right-10 -bottom-10 text-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none transform rotate-12 scale-150">
-                      <SunIcon className="w-64 h-64" />
-                  </div>
-
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-transparent via-gold/20 to-transparent group-hover:via-gold/50 transition-all duration-500"></div>
-                  
-                  {reading.intro && (
-                    <div className="mb-6 border-b border-parchment/10 pb-6 relative z-10">
-                      <h4 className="text-gold/50 font-display text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-gold/50"></span>
-                        正在阅读……
-                      </h4>
-                      <div 
-                        className="text-lg text-parchment/90 italic leading-relaxed"
-                        dangerouslySetInnerHTML={{ __html: reading.intro }}
-                      />
-                    </div>
-                  )}
-                  
-                  {reading.content && (
-                    <div className="relative z-10">
-                      <h4 className="text-gold/50 font-display text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-gold/50"></span>
-                        我读到……
-                      </h4>
-                      <div className="prose prose-invert prose-p:text-parchment prose-headings:text-gold max-w-none">
-                        <div 
-                          className="text-xl leading-loose font-serif first-letter:text-5xl first-letter:font-display first-letter:text-gold first-letter:mr-3 first-letter:float-left"
-                          dangerouslySetInnerHTML={{ __html: reading.content }}
-                        />
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center text-parchment/40 mt-20 italic">
-              <p>此物品没有可阅读的内容。</p>
-            </div>
-          )}
-        </div>
+        <BookReader 
+          readings={selectedItem.readings || []}
+          title={selectedItem.name}
+          description={selectedItem.description}
+          onClose={() => setSelectedItem(null)}
+        />
       ) : (
         <div className="max-w-3xl mx-auto text-center mt-20">
           <h2 className="font-display text-4xl text-gold mb-6">欢迎，图书管理员。</h2>

@@ -1,5 +1,6 @@
 {
-  "name": "frontend",
+  "name": "hush-house-reader-frontend",
+  "description": "Hush House/噤声书屋 - 《密教模拟器》和《司辰之书》的可视化阅读器",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,7 +17,8 @@
     "d3": "^7.9.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-force-graph-2d": "^1.29.0"
+    "react-force-graph-2d": "^1.29.0",
+    "react-pageflip": "^2.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",

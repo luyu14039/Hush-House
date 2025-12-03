@@ -74,3 +74,82 @@ body {
   
   --animate-twinkle: twinkle 3s infinite ease-in-out;
 }
+
+/* Book Reader 3D Transforms */
+.perspective-1000 { perspective: 1000px; }
+.perspective-2000 { perspective: 2000px; }
+.transform-style-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+.rotate-y-180 { transform: rotateY(180deg); }
+.-rotate-y-180 { transform: rotateY(-180deg); }
+
+@keyframes flipIn {
+  from { transform: rotateY(-180deg); }
+  to { transform: rotateY(0deg); }
+}
+.animate-flip-in {
+  animation: flipIn 0.6s ease-in-out forwards;
+}
+
+/* Old Reading Desk Background */
+.bg-desk {
+  background-color: #1a120b;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 20%, rgba(0,0,0,0.8) 100%),
+    repeating-linear-gradient(90deg, #2b1d0e 0px, #2b1d0e 4px, #26190c 4px, #26190c 8px);
+  box-shadow: inset 0 0 150px rgba(0,0,0,0.9);
+}
+
+/* Desk Texture */
+.bg-desk {
+  background-color: #1a120b;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.9);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0; /* Start hidden */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+/* Mystic Emergence Animation */
+@keyframes mystic-emerge {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-mystic-emerge {
+  animation: mystic-emerge 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0; /* Start hidden */
+}

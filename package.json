@@ -1,4 +1,6 @@
 {
+  "name": "hush-house-reader",
+  "description": "Hush House/噤声书屋 - 《密教模拟器》和《司辰之书》的可视化阅读器",
   "scripts": {
     "dev": "npm run dev --prefix frontend"
   },
