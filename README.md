@@ -2,6 +2,8 @@
 
 **Hush House/噤声书屋 - 《密教模拟器》和《司辰之书》的可视化阅读器**
 
+> **✨ 点击此处直接进入在线阅读器 (Live Demo)：[https://luyu14039.github.io/Hush-House/](https://luyu14039.github.io/Hush-House/)**
+
 这是一个基于《密教模拟器 (Cultist Simulator)》和《司辰之书 (Book of Hours)》的世界观的数据可视化与分析项目。
 
 本项目旨在提取游戏中的文本数据，利用大语言模型（LLM，如 DeepSeek）进行深度语义分析，构建一个高质量的实体关系网络（Knowledge Graph），并通过现代化的前端技术提供可交互的在线阅读器和图谱浏览器。
