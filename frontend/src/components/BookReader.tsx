@@ -12,6 +12,12 @@ interface BookReaderProps {
   title: string;
   description: string;
   onClose?: () => void;
+  onPrev?: () => void;
+  onNext?: () => void;
+  hasPrev?: boolean;
+  hasNext?: boolean;
+  prevTitle?: string;
+  nextTitle?: string;
 }
 
 // Page Component
@@ -69,7 +75,7 @@ const Cover = forwardRef<HTMLDivElement, React.PropsWithChildren<{ title: string
 
 Cover.displayName = 'Cover';
 
-export const BookReader: React.FC<BookReaderProps> = ({ readings, title, description, onClose }) => {
+export const BookReader: React.FC<BookReaderProps> = ({ readings, title, description, onClose, onPrev, onNext, hasPrev, hasNext, prevTitle, nextTitle }) => {
   const bookRef = useRef<any>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [mode, setMode] = useState<'immersive' | 'minimalist'>('minimalist');
@@ -78,7 +84,7 @@ export const BookReader: React.FC<BookReaderProps> = ({ readings, title, descrip
   // --- Minimalist Mode Render ---
   if (mode === 'minimalist') {
     return (
-      <div className="w-full h-full flex flex-col items-center justify-center relative bg-[#1c1917] p-4 md:p-8">
+      <div className="w-full h-full flex flex-col items-center justify-center relative bg-[#1c1917] p-2 md:p-8">
         {/* Ambient Background Texture */}
         <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
         <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/20 to-black/80 pointer-events-none"></div>
@@ -86,10 +92,10 @@ export const BookReader: React.FC<BookReaderProps> = ({ readings, title, descrip
         {/* Paper Container */}
         <div className="w-full max-w-2xl h-full relative bg-[#fdfbf7] text-[#292524] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] rounded-sm overflow-hidden flex flex-col border border-[#e5e5e5]">
            
-           {/* Bookmark: Switch Mode */}
+           {/* Bookmark: Switch Mode — desktop only */}
            <button 
              onClick={() => setMode('immersive')}
-             className="absolute -top-2 left-8 z-30 bg-[#7f1d1d] text-[#fef3c7] px-3 pt-4 pb-3 rounded-b-sm shadow-md hover:h-14 transition-all duration-300 flex flex-col items-center gap-1 group border-x border-b border-[#450a0a]/20"
+             className="hidden md:flex absolute -top-2 left-8 z-30 bg-[#7f1d1d] text-[#fef3c7] px-3 pt-4 pb-3 rounded-b-sm shadow-md hover:h-14 transition-all duration-300 flex-col items-center gap-1 group border-x border-b border-[#450a0a]/20"
              title="切换至沉浸模式"
            >
              <BookOpenIcon className="w-5 h-5 drop-shadow-sm" />
@@ -143,7 +149,7 @@ export const BookReader: React.FC<BookReaderProps> = ({ readings, title, descrip
            </div>
            
            {/* Scrollable Content Area */}
-           <div className="relative z-10 flex-1 overflow-y-auto custom-scrollbar p-12 md:p-16 scroll-smooth">
+           <div className="relative z-10 flex-1 overflow-y-auto custom-scrollbar p-5 md:p-12 lg:p-16 scroll-smooth">
               
               {/* Header */}
               <div key={`header-${title}`} className="text-center mb-12 animate-mystic-emerge" style={{ animationDelay: '100ms' }}>
@@ -198,10 +204,40 @@ export const BookReader: React.FC<BookReaderProps> = ({ readings, title, descrip
                 ))}
               </div>
               
-              <div className="text-center pt-20 pb-8 text-[#292524]/20 text-sm font-serif italic flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: `${800 + readings.length * 200}ms` }}>
+              <div className="text-center pt-20 pb-4 text-[#292524]/20 text-sm font-serif italic flex flex-col items-center gap-2 animate-fade-in" style={{ animationDelay: `${800 + readings.length * 200}ms` }}>
                 <div className="w-16 h-px bg-[#292524]/20"></div>
                 <span>Finis</span>
               </div>
+
+              {/* Prev / Next navigation (bottom of scrollable content) */}
+              {(hasPrev || hasNext) && (
+                <div className="flex items-stretch gap-3 pt-2 pb-6 border-t border-[#292524]/10">
+                  {hasPrev ? (
+                    <button
+                      onClick={onPrev}
+                      className="flex-1 flex items-center gap-2 p-3 rounded-sm bg-[#292524]/5 hover:bg-[#292524]/10 border border-[#292524]/10 hover:border-[#d4af37]/30 transition-all duration-300 group text-left"
+                    >
+                      <ArrowLeftIcon className="w-4 h-4 text-[#d4af37]/60 group-hover:text-[#d4af37] flex-shrink-0 transition-colors" />
+                      <div className="min-w-0">
+                        <div className="text-[10px] text-[#292524]/40 font-display uppercase tracking-widest mb-0.5">上一篇</div>
+                        <div className="text-xs text-[#292524]/70 group-hover:text-[#292524] truncate font-serif transition-colors" dangerouslySetInnerHTML={{ __html: prevTitle || '' }} />
+                      </div>
+                    </button>
+                  ) : <div className="flex-1" />}
+                  {hasNext ? (
+                    <button
+                      onClick={onNext}
+                      className="flex-1 flex items-center gap-2 p-3 rounded-sm bg-[#292524]/5 hover:bg-[#292524]/10 border border-[#292524]/10 hover:border-[#d4af37]/30 transition-all duration-300 group text-right justify-end"
+                    >
+                      <div className="min-w-0">
+                        <div className="text-[10px] text-[#292524]/40 font-display uppercase tracking-widest mb-0.5">下一篇</div>
+                        <div className="text-xs text-[#292524]/70 group-hover:text-[#292524] truncate font-serif transition-colors" dangerouslySetInnerHTML={{ __html: nextTitle || '' }} />
+                      </div>
+                      <ArrowRightIcon className="w-4 h-4 text-[#d4af37]/60 group-hover:text-[#d4af37] flex-shrink-0 transition-colors" />
+                    </button>
+                  ) : <div className="flex-1" />}
+                </div>
+              )}
            </div>
         </div>
       </div>

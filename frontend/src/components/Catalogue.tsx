@@ -80,11 +80,14 @@ export const Catalogue: React.FC<CatalogueProps> = ({ items, onSelect, selectedI
               key={item.id}
               onClick={() => onSelect(item)}
               className={`
+                relative overflow-hidden
                 p-3 border border-transparent cursor-pointer transition-all duration-300 group
-                hover:border-gold/30 hover:bg-gold/5
-                ${selectedId === item.id ? 'border-gold bg-gold/10 shadow-[0_0_10px_rgba(212,175,55,0.2)]' : 'border-b-gold/10'}
+                hover:border-gold/30 hover:bg-gold/5 hover:translate-x-0.5
+                ${selectedId === item.id ? 'border-gold/40 bg-gold/10 shadow-[0_0_15px_rgba(212,175,55,0.2)]' : ''}
               `}
             >
+              {/* Left gold accent bar */}
+              <span className={`absolute left-0 top-3 bottom-3 w-[2px] rounded-full bg-gradient-to-b from-transparent via-gold to-transparent transition-opacity duration-300 ${selectedId === item.id ? 'opacity-100' : 'opacity-0 group-hover:opacity-25'}`} />
               <h3 
                 className={`font-display text-sm transition-colors ${selectedId === item.id ? 'text-gold' : 'text-parchment group-hover:text-gold/80'}`}
                 dangerouslySetInnerHTML={{ __html: item.name }}
