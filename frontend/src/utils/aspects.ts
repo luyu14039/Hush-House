@@ -3,20 +3,20 @@ export const ASPECT_INFO: Record<string, { name: string; color: string; icon?: s
   // Principles (CS & BoH)
   lantern: { name: '灯', color: 'text-yellow-400 border-yellow-400/30 bg-yellow-400/10', icon: 'SunIcon' },
   forge: { name: '铸', color: 'text-orange-500 border-orange-500/30 bg-orange-500/10', icon: 'FireIcon' },
-  edge: { name: '刃', color: 'text-lime-500 border-lime-500/30 bg-lime-500/10', icon: 'ScissorsIcon' },
-  winter: { name: '冬', color: 'text-cyan-100 border-cyan-100/30 bg-cyan-100/10', icon: 'SnowflakeIcon' },
+  edge: { name: '刃', color: 'text-lime-500 border-lime-500/30 bg-lime-500/10', icon: 'BoltIcon' },
+  winter: { name: '冬', color: 'text-cyan-100 border-cyan-100/30 bg-cyan-100/10', icon: 'CloudIcon' },
   heart: { name: '心', color: 'text-rose-400 border-rose-400/30 bg-rose-400/10', icon: 'HeartIcon' },
   grail: { name: '杯', color: 'text-red-600 border-red-600/30 bg-red-600/10', icon: 'BeakerIcon' },
-  moth: { name: '蛾', color: 'text-amber-200 border-amber-200/30 bg-amber-200/10', icon: 'MoonIcon' },
+  moth: { name: '蛾', color: 'text-amber-200 border-amber-200/30 bg-amber-200/10', icon: 'EyeIcon' },
   knock: { name: '启', color: 'text-purple-500 border-purple-500/30 bg-purple-500/10', icon: 'KeyIcon' },
-  secret_histories: { name: '秘史', color: 'text-fuchsia-400 border-fuchsia-400/30 bg-fuchsia-400/10', icon: 'BookOpenIcon' },
+  secret_histories: { name: '秘史', color: 'text-fuchsia-400 border-fuchsia-400/30 bg-fuchsia-400/10', icon: 'ArchiveBoxIcon' },
 
   // BoH Specific
   sky: { name: '穹', color: 'text-sky-400 border-sky-400/30 bg-sky-400/10', icon: 'CloudIcon' },
   moon: { name: '月', color: 'text-indigo-300 border-indigo-300/30 bg-indigo-300/10', icon: 'MoonIcon' },
   nectar: { name: '蜜', color: 'text-emerald-400 border-emerald-400/30 bg-emerald-400/10', icon: 'SparklesIcon' },
   scale: { name: '鳞', color: 'text-yellow-700 border-yellow-700/30 bg-yellow-700/10', icon: 'ScaleIcon' },
-  rose: { name: '玫瑰', color: 'text-pink-400 border-pink-400/30 bg-pink-400/10', icon: 'RoseIcon' },
+  rose: { name: '玫瑰', color: 'text-pink-400 border-pink-400/30 bg-pink-400/10', icon: 'StarIcon' },
 
   // Item Types / Other
   text: { name: '文献', color: 'text-stone-400 border-stone-400/30 bg-stone-400/10', icon: 'DocumentTextIcon' },

@@ -2,6 +2,56 @@ import React, { forwardRef, useRef, useState } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import { BookOpenIcon, XMarkIcon, ArrowLeftIcon, ArrowRightIcon, DocumentTextIcon, SparklesIcon } from '@heroicons/react/24/outline';
 
+// ── Aspect Theming ──────────────────────────────────────────────────────────────
+const PRINCIPLE_KEYS = [
+  'lantern','forge','edge','winter','heart','grail','moth','knock',
+  'secret_histories','sky','moon','nectar','scale','rose',
+];
+
+interface AspectTheme {
+  glow: string;
+  paperTint: string;
+  runes: string;
+  word: string;
+  accent: string;
+}
+
+const ASPECT_THEMES: Record<string, AspectTheme> = {
+  lantern:          { glow: 'radial-gradient(ellipse at 50% 0%,   rgba(251,191,36,0.22)  0%, transparent 70%)', paperTint: 'rgba(251,191,36,0.05)', runes: '✦ ☀ ◈', word: 'LUX',     accent: '#fbbf24' },
+  forge:            { glow: 'radial-gradient(ellipse at 50% 100%, rgba(234,88,12,0.28)   0%, transparent 70%)', paperTint: 'rgba(234,88,12,0.04)',  runes: '⚒ ⊕ ⟲', word: 'IGNIS',   accent: '#ea580c' },
+  edge:             { glow: 'radial-gradient(ellipse at 100% 50%, rgba(101,163,13,0.18)  0%, transparent 70%)', paperTint: 'rgba(101,163,13,0.04)', runes: '⟋ ∥ ⊢', word: 'ACIES',   accent: '#65a30d' },
+  winter:           { glow: 'radial-gradient(ellipse at 50% 50%,  rgba(125,211,252,0.18) 0%, transparent 70%)', paperTint: 'rgba(125,211,252,0.04)',runes: '❄ ∗ ⊹', word: 'HIEMS',   accent: '#7dd3fc' },
+  heart:            { glow: 'radial-gradient(ellipse at 50% 50%,  rgba(244,63,94,0.18)   0%, transparent 70%)', paperTint: 'rgba(244,63,94,0.04)',  runes: '♡ ❋ ◌', word: 'COR',     accent: '#f43f5e' },
+  grail:            { glow: 'radial-gradient(ellipse at 50% 50%,  rgba(220,38,38,0.22)   0%, transparent 70%)', paperTint: 'rgba(220,38,38,0.05)',  runes: '⊕ ◉ ⟐', word: 'SITIS',   accent: '#dc2626' },
+  moth:             { glow: 'radial-gradient(ellipse at 50% 100%, rgba(212,175,55,0.18)  0%, transparent 70%)', paperTint: 'rgba(212,175,55,0.04)', runes: '☽ ∞ ◈', word: 'FATUM',   accent: '#d4af37' },
+  knock:            { glow: 'radial-gradient(ellipse at 0%   50%,  rgba(168,85,247,0.22)  0%, transparent 70%)', paperTint: 'rgba(168,85,247,0.04)', runes: '⟐ ⊗ ⬡', word: 'PORTA',   accent: '#a855f7' },
+  secret_histories: { glow: 'radial-gradient(ellipse at 50% 50%,  rgba(192,38,211,0.18)  0%, transparent 70%)', paperTint: 'rgba(192,38,211,0.04)', runes: '⊗ ☉ ↯', word: 'ARCANUM', accent: '#c026d3' },
+  sky:              { glow: 'radial-gradient(ellipse at 50% 0%,   rgba(56,189,248,0.18)  0%, transparent 70%)', paperTint: 'rgba(56,189,248,0.04)', runes: '◯ ⊙ ∘', word: 'CAELUM',  accent: '#38bdf8' },
+  moon:             { glow: 'radial-gradient(ellipse at 100% 0%,  rgba(129,140,248,0.18) 0%, transparent 70%)', paperTint: 'rgba(129,140,248,0.04)',runes: '☽ ◯ ✦', word: 'LUNA',    accent: '#818cf8' },
+  nectar:           { glow: 'radial-gradient(ellipse at 50% 50%,  rgba(52,211,153,0.18)  0%, transparent 70%)', paperTint: 'rgba(52,211,153,0.04)', runes: '⬡ ◈ ✦', word: 'MEL',     accent: '#34d399' },
+  scale:            { glow: 'radial-gradient(ellipse at 50% 50%,  rgba(180,83,9,0.22)    0%, transparent 70%)', paperTint: 'rgba(180,83,9,0.05)',   runes: '⬟ ◈ ⊕', word: 'SQUAMA',  accent: '#b45309' },
+  rose:             { glow: 'radial-gradient(ellipse at 50% 0%,   rgba(236,72,153,0.22)  0%, transparent 70%)', paperTint: 'rgba(236,72,153,0.05)', runes: '❋ ✿ ◌', word: 'ROSA',    accent: '#ec4899' },
+};
+
+const DEFAULT_THEME: AspectTheme = {
+  glow: '',
+  paperTint: '',
+  runes: '☥ ☾ 🜃',
+  word: 'NOX',
+  accent: '#d4af37',
+};
+
+function getDominantPrinciple(aspects?: Record<string, number>): AspectTheme {
+  if (!aspects) return DEFAULT_THEME;
+  let best = '';
+  let bestVal = 0;
+  for (const key of PRINCIPLE_KEYS) {
+    const v = aspects[key] ?? 0;
+    if (v > bestVal) { bestVal = v; best = key; }
+  }
+  return best ? (ASPECT_THEMES[best] ?? DEFAULT_THEME) : DEFAULT_THEME;
+}
+
 interface Reading {
   intro?: string;
   content?: string;
@@ -18,6 +68,7 @@ interface BookReaderProps {
   hasNext?: boolean;
   prevTitle?: string;
   nextTitle?: string;
+  aspects?: Record<string, number>;
 }
 
 // Page Component
@@ -75,11 +126,12 @@ const Cover = forwardRef<HTMLDivElement, React.PropsWithChildren<{ title: string
 
 Cover.displayName = 'Cover';
 
-export const BookReader: React.FC<BookReaderProps> = ({ readings, title, description, onClose, onPrev, onNext, hasPrev, hasNext, prevTitle, nextTitle }) => {
+export const BookReader: React.FC<BookReaderProps> = ({ readings, title, description, onClose, onPrev, onNext, hasPrev, hasNext, prevTitle, nextTitle, aspects }) => {
   const bookRef = useRef<any>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [mode, setMode] = useState<'immersive' | 'minimalist'>('minimalist');
   const [showMysticDetails, setShowMysticDetails] = useState(true);
+  const theme = getDominantPrinciple(aspects);
 
   // --- Minimalist Mode Render ---
   if (mode === 'minimalist') {
@@ -88,9 +140,17 @@ export const BookReader: React.FC<BookReaderProps> = ({ readings, title, descrip
         {/* Ambient Background Texture */}
         <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
         <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/20 to-black/80 pointer-events-none"></div>
+        {/* Aspect Glow */}
+        {theme.glow && (
+          <div className="absolute inset-0 pointer-events-none transition-all duration-700" style={{ background: theme.glow }}></div>
+        )}
 
         {/* Paper Container */}
         <div className="w-full max-w-2xl h-full relative bg-[#fdfbf7] text-[#292524] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] rounded-sm overflow-hidden flex flex-col border border-[#e5e5e5]">
+           {/* Aspect Paper Tint */}
+           {theme.paperTint && (
+             <div className="absolute inset-0 pointer-events-none z-[1] rounded-sm transition-all duration-700" style={{ background: theme.paperTint }}></div>
+           )}
            
            {/* Bookmark: Switch Mode — desktop only */}
            <button 
@@ -138,11 +198,11 @@ export const BookReader: React.FC<BookReaderProps> = ({ readings, title, descrip
                   <div className="absolute top-24 left-12 w-32 h-32 opacity-[0.03] mix-blend-multiply pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')] rotate-45"></div>
 
                   {/* Mystic Runes (Randomly placed) */}
-                  <div className="absolute bottom-8 left-8 font-display text-4xl text-[#7f1d1d] opacity-[0.08] rotate-[-15deg] pointer-events-none select-none">
-                    ☥ ☾ 🜃
+                  <div className="absolute bottom-8 left-8 font-display text-4xl opacity-[0.10] rotate-[-15deg] pointer-events-none select-none transition-all duration-700" style={{ color: theme.accent }}>
+                    {theme.runes}
                   </div>
-                  <div className="absolute top-1/2 right-4 font-display text-2xl text-[#292524] opacity-[0.05] rotate-[90deg] pointer-events-none select-none tracking-[1em]">
-                    NOX
+                  <div className="absolute top-1/2 right-4 font-display text-2xl text-[#292524] opacity-[0.07] rotate-[90deg] pointer-events-none select-none tracking-[1em]">
+                    {theme.word}
                   </div>
                 </>
               )}
@@ -153,7 +213,7 @@ export const BookReader: React.FC<BookReaderProps> = ({ readings, title, descrip
               
               {/* Header */}
               <div key={`header-${title}`} className="text-center mb-12 animate-mystic-emerge" style={{ animationDelay: '100ms' }}>
-                <div className="text-[#d4af37] opacity-60 mb-4 flex justify-center">
+                <div className="opacity-60 mb-4 flex justify-center" style={{ color: theme.accent }}>
                   <SparklesIcon className="w-6 h-6" />
                 </div>
                 <h1 className="font-display text-4xl md:text-5xl text-[#292524] mb-6 tracking-wide drop-shadow-sm mix-blend-multiply">{title}</h1>

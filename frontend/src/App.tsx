@@ -29,7 +29,10 @@ import {
   UserIcon,
   AcademicCapIcon,
   CurrencyDollarIcon,
-  StarIcon
+  StarIcon,
+  BoltIcon,
+  EyeIcon,
+  ArchiveBoxIcon
 } from '@heroicons/react/24/outline'
 
 const IconMap: Record<string, React.ComponentType<any>> = {
@@ -50,7 +53,10 @@ const IconMap: Record<string, React.ComponentType<any>> = {
   AcademicCapIcon,
   CurrencyDollarIcon,
   StarIcon,
-  RoseIcon: SparklesIcon // Fallback
+  BoltIcon,
+  EyeIcon,
+  ArchiveBoxIcon,
+  RoseIcon: StarIcon
 };
 
 function App() {
@@ -278,6 +284,7 @@ function App() {
         <BookReader 
           readings={selectedItem.readings || []}
           title={selectedItem.name}
+          aspects={selectedItem.aspects}
           description={selectedItem.description}
           onClose={() => setSelectedItem(null)}
           hasPrev={!!prevItem}
